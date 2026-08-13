@@ -1,0 +1,41 @@
+2026-07-28 12:12:01,305  INFO      Log file: /home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/logs/training_20260728_121201.log
+2026-07-28 12:12:12,448  INFO      ============================================================
+2026-07-28 12:12:12,448  INFO        NXP Cup India 2026 — YOLOv8n Training
+2026-07-28 12:12:12,448  INFO      ============================================================
+2026-07-28 12:12:12,448  INFO        Data YAML   : /home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/configs/data_abs.yaml
+2026-07-28 12:12:12,448  INFO        Config      : /home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/configs/training_config.yaml
+2026-07-28 12:12:12,448  INFO        Model       : yolov8n.pt
+2026-07-28 12:12:12,448  INFO        Epochs      : 150
+2026-07-28 12:12:12,448  INFO        Batch       : 16
+2026-07-28 12:12:12,449  INFO        Image size  : 512
+2026-07-28 12:12:12,449  INFO        Optimizer   : SGD
+2026-07-28 12:12:12,449  INFO        Starting fresh from: yolov8n.pt
+2026-07-28 12:12:15,700  INFO        Launching training...
+2026-07-28 12:12:16,616  ERROR     
+  Training failed with error: Invalid CUDA 'device=0' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.
+
+torch.cuda.is_available(): False
+torch.cuda.device_count(): 0
+os.environ['CUDA_VISIBLE_DEVICES']: None
+See https://pytorch.org/get-started/locally/ for up-to-date torch install instructions if no CUDA devices are seen by torch.
+Traceback (most recent call last):
+  File "/home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/scripts/03_train.py", line 217, in main
+    run_dir = train(logger)
+  File "/home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/scripts/03_train.py", line 194, in train
+    results = model.train(**train_kwargs)
+  File "/home/ebinesh/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 783, in train
+    self.trainer = (trainer or self._smart_load("trainer"))(overrides=args, _callbacks=self.callbacks)
+  File "/home/ebinesh/.local/lib/python3.10/site-packages/ultralytics/models/yolo/detect/train.py", line 63, in __init__
+    super().__init__(cfg, overrides, _callbacks)
+  File "/home/ebinesh/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 128, in __init__
+    self.device = select_device(self.args.device)
+  File "/home/ebinesh/.local/lib/python3.10/site-packages/ultralytics/utils/torch_utils.py", line 231, in select_device
+    raise ValueError(
+ValueError: Invalid CUDA 'device=0' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.
+
+torch.cuda.is_available(): False
+torch.cuda.device_count(): 0
+os.environ['CUDA_VISIBLE_DEVICES']: None
+See https://pytorch.org/get-started/locally/ for up-to-date torch install instructions if no CUDA devices are seen by torch.
+
+2026-07-28 12:12:16,670  ERROR       Check the log file and resolve the issue.

@@ -1,0 +1,10 @@
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/uninstall.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/synapse_gz_uninstall.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/synapse_gz.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/test.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/edit_cache.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/rebuild_cache.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/list_install_components.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/install.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/install/local.dir
+/home/tharun/cognipilot/cranium/build/synapse_gz/CMakeFiles/install/strip.dir

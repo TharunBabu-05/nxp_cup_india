@@ -1,0 +1,124 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6e8ee9fc2d1823843429.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "corti",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_corti_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_corti_egg-8353592147314c8a5e9c.json",
+					"name" : "ament_cmake_python_build_corti_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_corti::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_corti-532309c221589e639ab7.json",
+					"name" : "ament_cmake_python_copy_corti",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bezier6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bezier6-d6f818b9991061ad3b09.json",
+					"name" : "bezier6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "corti_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-corti_uninstall-8ad1463dbccd132ddd52.json",
+					"name" : "corti_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "odom_to_tf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-odom_to_tf-dcab1f0a1f422392ab6d.json",
+					"name" : "odom_to_tf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rover_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rover_planner-f8de61c953db9c773d0d.json",
+					"name" : "rover_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tf_to_odom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tf_to_odom-661fdae53c9fe0e72138.json",
+					"name" : "tf_to_odom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e3e94f3287a0b77f91e9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tharun/cognipilot/cranium/build/corti",
+		"source" : "/home/tharun/cognipilot/cranium/src/corti"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

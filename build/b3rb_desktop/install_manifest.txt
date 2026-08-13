@@ -1,0 +1,15 @@
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/ament_index/resource_index/package_run_dependencies/b3rb_desktop
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/ament_index/resource_index/parent_prefix_path/b3rb_desktop
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/environment/ament_prefix_path.sh
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/environment/ament_prefix_path.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/environment/path.sh
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/environment/path.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/local_setup.bash
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/local_setup.sh
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/local_setup.zsh
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/local_setup.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/package.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/ament_index/resource_index/packages/b3rb_desktop
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/cmake/b3rb_desktopConfig.cmake
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/cmake/b3rb_desktopConfig-version.cmake
+/home/tharun/cognipilot/cranium/install/b3rb_desktop/share/b3rb_desktop/package.xml

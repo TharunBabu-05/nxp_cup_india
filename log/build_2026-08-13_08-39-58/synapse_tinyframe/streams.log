@@ -1,0 +1,68 @@
+[0.025s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_tinyframe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tharun/cognipilot/cranium/src/synapse_tinyframe -DCMAKE_INSTALL_PREFIX=/home/tharun/cognipilot/cranium/install/synapse_tinyframe
+[0.103s] -- The C compiler identification is GNU 11.4.0
+[0.155s] -- The CXX compiler identification is GNU 11.4.0
+[0.162s] -- Detecting C compiler ABI info
+[0.230s] -- Detecting C compiler ABI info - done
+[0.242s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.242s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.356s] -- Detecting CXX compiler ABI info - done
+[0.366s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.367s] -- Detecting CXX compile features
+[0.367s] -- Detecting CXX compile features - done
+[0.369s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.571s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.679s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.752s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.753s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.753s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include>;$<BUILD_INTERFACE:/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe>
+[0.753s] -- Configured cppcheck exclude dirs and/or files: 
+[0.755s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.755s] -- Configured cpplint exclude dirs and/or files: 
+[0.756s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.769s] -- Added test 'lint_cmake' to check CMake code style
+[0.770s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.772s] -- Added test 'uncrustify' to check C / C++ code style
+[0.772s] -- Configured uncrustify additional arguments: 
+[0.775s] -- Added test 'xmllint' to check XML markup files
+[0.780s] -- Configuring done
+[0.786s] -- Generating done
+[0.788s] -- Build files have been written to: /home/tharun/cognipilot/cranium/build/synapse_tinyframe
+[0.792s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_tinyframe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tharun/cognipilot/cranium/src/synapse_tinyframe -DCMAKE_INSTALL_PREFIX=/home/tharun/cognipilot/cranium/install/synapse_tinyframe
+[0.800s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_tinyframe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tharun/cognipilot/cranium/build/synapse_tinyframe -- -j12 -l12
+[0.851s] [ 33%] [32mBuilding C object CMakeFiles/synapse_tinyframe.dir/src/utils.c.o[0m
+[0.852s] [ 66%] [32mBuilding C object CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o[0m
+[0.947s] [100%] [32m[1mLinking C static library libsynapse_tinyframe.a[0m
+[1.018s] [100%] Built target synapse_tinyframe
+[1.064s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_tinyframe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tharun/cognipilot/cranium/build/synapse_tinyframe -- -j12 -l12
+[1.065s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_tinyframe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tharun/cognipilot/cranium/build/synapse_tinyframe
+[1.078s] -- Install configuration: ""
+[1.078s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/environment/library_path.sh
+[1.078s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/environment/library_path.dsv
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/include
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/include/synapse_tinyframe
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/include/synapse_tinyframe/TinyFrame.h
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/include/synapse_tinyframe/utils.h
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/include/synapse_tinyframe/SynapseTopics.h
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/include/synapse_tinyframe/TF_Config.h
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/lib/libsynapse_tinyframe.a
+[1.079s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/ament_index/resource_index/package_run_dependencies/synapse_tinyframe
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/ament_index/resource_index/parent_prefix_path/synapse_tinyframe
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/environment/ament_prefix_path.sh
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/environment/ament_prefix_path.dsv
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/environment/path.sh
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/environment/path.dsv
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/local_setup.bash
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/local_setup.sh
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/local_setup.zsh
+[1.080s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/local_setup.dsv
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/package.dsv
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/ament_index/resource_index/packages/synapse_tinyframe
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/cmake/synapse_tinyframeExport-noconfig.cmake
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/cmake/ament_cmake_export_targets-extras.cmake
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/cmake/synapse_tinyframeConfig.cmake
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/cmake/synapse_tinyframeConfig-version.cmake
+[1.083s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/package.xml
+[1.088s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_tinyframe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tharun/cognipilot/cranium/build/synapse_tinyframe

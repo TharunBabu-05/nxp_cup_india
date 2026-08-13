@@ -1,0 +1,14 @@
+train: /content/NXPCUP_2026.v2-v1_a.yolov8/train/images
+val: /content/NXPCUP_2026.v2-v1_a.yolov8/valid/images
+test: /content/NXPCUP_2026.v2-v1_a.yolov8/test/images
+nc: 9
+names:
+- A
+- B
+- C
+- Left
+- Right
+- Straight
+- X
+- Y
+- Z

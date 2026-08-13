@@ -1,0 +1,22 @@
+2026-07-28 07:56:34,394  INFO      Log file: /content/NXPCUP_2026.v2-v1_a.yolov8/logs/training_20260728_075634.log
+2026-07-28 07:56:36,429  INFO      ============================================================
+2026-07-28 07:56:36,429  INFO        NXP Cup India 2026 — YOLOv8n Training
+2026-07-28 07:56:36,429  INFO      ============================================================
+2026-07-28 07:56:36,429  INFO        Data YAML   : /content/NXPCUP_2026.v2-v1_a.yolov8/configs/data_abs.yaml
+2026-07-28 07:56:36,429  INFO        Config      : /content/NXPCUP_2026.v2-v1_a.yolov8/configs/training_config.yaml
+2026-07-28 07:56:36,429  INFO        Model       : yolov8n.pt
+2026-07-28 07:56:36,430  INFO        Epochs      : 25
+2026-07-28 07:56:36,430  INFO        Batch       : 16
+2026-07-28 07:56:36,430  INFO        Image size  : 512
+2026-07-28 07:56:36,430  INFO        Optimizer   : SGD
+2026-07-28 07:56:36,430  INFO        Starting fresh from: yolov8n.pt
+2026-07-28 07:56:36,587  INFO        Launching training...
+2026-07-28 08:05:31,947  INFO        Training complete!
+2026-07-28 08:05:31,951  INFO        Saved best.pt → /content/NXPCUP_2026.v2-v1_a.yolov8/models/best.pt
+2026-07-28 08:05:31,954  INFO        Saved last.pt → /content/NXPCUP_2026.v2-v1_a.yolov8/models/last.pt
+2026-07-28 08:05:31,954  INFO      
+  ✅ Artifacts saved to: /content/NXPCUP_2026.v2-v1_a.yolov8/models
+2026-07-28 08:05:31,955  INFO        ✅ Run directory     : /content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n
+2026-07-28 08:05:31,955  INFO      
+  Training finished. Run dir: /content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n
+2026-07-28 08:05:31,956  INFO        Proceeding to Phase 6 — Evaluation...

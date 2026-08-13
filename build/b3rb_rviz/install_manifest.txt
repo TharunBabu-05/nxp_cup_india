@@ -1,0 +1,17 @@
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/rviz/nav2/robot.rviz
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/launch/view_robot.launch.py
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/ament_index/resource_index/package_run_dependencies/b3rb_rviz
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/ament_index/resource_index/parent_prefix_path/b3rb_rviz
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/ament_prefix_path.sh
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/ament_prefix_path.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/path.sh
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/path.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.bash
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.sh
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.zsh
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/package.dsv
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/ament_index/resource_index/packages/b3rb_rviz
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/cmake/b3rb_rvizConfig.cmake
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/cmake/b3rb_rvizConfig-version.cmake
+/home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/package.xml

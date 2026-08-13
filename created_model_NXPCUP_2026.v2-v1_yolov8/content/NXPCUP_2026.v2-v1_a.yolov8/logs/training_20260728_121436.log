@@ -1,0 +1,14 @@
+2026-07-28 12:14:36,665  INFO      Log file: /home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/logs/training_20260728_121436.log
+2026-07-28 12:14:40,050  INFO      ============================================================
+2026-07-28 12:14:40,050  INFO        NXP Cup India 2026 — YOLOv8n Training
+2026-07-28 12:14:40,050  INFO      ============================================================
+2026-07-28 12:14:40,050  INFO        Data YAML   : /home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/configs/data_abs.yaml
+2026-07-28 12:14:40,050  INFO        Config      : /home/ebinesh/nxp_cup/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov8/configs/training_config.yaml
+2026-07-28 12:14:40,050  INFO        Model       : yolov8n.pt
+2026-07-28 12:14:40,050  INFO        Epochs      : 25
+2026-07-28 12:14:40,050  INFO        Batch       : 16
+2026-07-28 12:14:40,050  INFO        Image size  : 512
+2026-07-28 12:14:40,050  INFO        Optimizer   : SGD
+2026-07-28 12:14:40,050  INFO        Starting fresh from: yolov8n.pt
+2026-07-28 12:14:40,118  WARNING   CUDA unavailable — falling back to device='cpu'
+2026-07-28 12:14:40,118  INFO        Launching training...

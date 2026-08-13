@@ -1,0 +1,10 @@
+{
+  "package_name": "synapse_msgs",
+  "non_idl_tuples": [
+    "/home/tharun/cognipilot/cranium/src/synapse_msgs:msg/BezierCurve.msg",
+    "/home/tharun/cognipilot/cranium/src/synapse_msgs:msg/BezierTrajectory.msg",
+    "/home/tharun/cognipilot/cranium/src/synapse_msgs:msg/Status.msg",
+    "/home/tharun/cognipilot/cranium/src/synapse_msgs:msg/EdgeVectors.msg",
+    "/home/tharun/cognipilot/cranium/src/synapse_msgs:msg/ServerCommunication.msg"
+  ]
+}

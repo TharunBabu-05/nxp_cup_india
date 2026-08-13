@@ -1,0 +1,10 @@
+msg/BezierCurve.idl
+msg/BezierCurve.msg
+msg/BezierTrajectory.idl
+msg/BezierTrajectory.msg
+msg/EdgeVectors.idl
+msg/EdgeVectors.msg
+msg/ServerCommunication.idl
+msg/ServerCommunication.msg
+msg/Status.idl
+msg/Status.msg

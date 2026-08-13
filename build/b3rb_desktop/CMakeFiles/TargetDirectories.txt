@@ -1,0 +1,9 @@
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/uninstall.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/b3rb_desktop_uninstall.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/test.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/edit_cache.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/rebuild_cache.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/list_install_components.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/install.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/install/local.dir
+/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles/install/strip.dir

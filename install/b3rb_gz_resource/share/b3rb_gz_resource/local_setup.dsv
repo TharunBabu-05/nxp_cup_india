@@ -1,0 +1,3 @@
+source;share/b3rb_gz_resource/environment/ament_prefix_path.sh
+source;share/b3rb_gz_resource/environment/path.sh
+source;share/b3rb_gz_resource/environment/b3rb_gz_resource.dsv

@@ -1,0 +1,11 @@
+2026-07-28 07:49:43,857  INFO      Log file: /content/NXPCUP_2026.v2-v1_a.yolov8/logs/training_20260728_074943.log
+2026-07-28 07:49:43,857  ERROR     
+  Training failed with error: No module named 'ultralytics'
+Traceback (most recent call last):
+  File "/content/NXPCUP_2026.v2-v1_a.yolov8/scripts/03_train.py", line 223, in main
+    run_dir = train(logger)
+              ^^^^^^^^^^^^^
+  File "/content/NXPCUP_2026.v2-v1_a.yolov8/scripts/03_train.py", line 121, in train
+    from ultralytics import YOLO
+ModuleNotFoundError: No module named 'ultralytics'
+2026-07-28 07:49:43,857  ERROR       Check the log file and resolve the issue.
