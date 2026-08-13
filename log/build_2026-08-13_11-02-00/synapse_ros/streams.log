@@ -1,0 +1,59 @@
+[0.191s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_ros': CMAKE_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_tinyframe:/home/tharun/cognipilot/cranium/install/synapse_protobuf:/home/tharun/cognipilot/cranium/install/synapse_msgs:/home/tharun/cognipilot/cranium/install/synapse_ros:/home/tharun/cognipilot/cranium/install/synapse_gz:/home/tharun/cognipilot/cranium/install/corti:/home/tharun/cognipilot/cranium/install/dream_world:/home/tharun/cognipilot/cranium/install/cerebri_bringup:/home/tharun/cognipilot/cranium/install/b3rb_simulator:/home/tharun/cognipilot/cranium/install/b3rb_desktop:/home/tharun/cognipilot/cranium/install/b3rb_rviz:/home/tharun/cognipilot/cranium/install/b3rb_nav2:/home/tharun/cognipilot/cranium/install/b3rb_gz_resource:/home/tharun/cognipilot/cranium/install/b3rb_gz_bringup:/home/tharun/cognipilot/cranium/install/b3rb_description:/home/tharun/cognipilot/electrode/install/electrode:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble LD_LIBRARY_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:/home/tharun/cognipilot/cranium/install/synapse_tinyframe/lib:/home/tharun/cognipilot/cranium/install/synapse_protobuf/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/tharun/cognipilot/cranium/build/synapse_ros -- -j12 -l12
+[0.219s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.321s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.341s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.343s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.347s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.362s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.384s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.385s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.398s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.434s] -- Found actuator_msgs: 0.0.1 (/opt/ros/humble/share/actuator_msgs/cmake)
+[0.445s] -- Found nav_msgs: 4.9.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.465s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.484s] -- Found synapse_protobuf: 0.0.0 (/home/tharun/cognipilot/cranium/install/synapse_protobuf/share/synapse_protobuf/cmake)
+[0.493s] -- Found synapse_tinyframe: 0.0.0 (/home/tharun/cognipilot/cranium/install/synapse_tinyframe/share/synapse_tinyframe/cmake)
+[0.494s] -- Found synapse_msgs: 0.0.1 (/home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake)
+[0.509s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.586s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.588s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.588s] -- Configured cppcheck include dirs: 
+[0.588s] -- Configured cppcheck exclude dirs and/or files: 
+[0.588s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.588s] -- Configured cpplint exclude dirs and/or files: 
+[0.589s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.589s] -- Added test 'lint_cmake' to check CMake code style
+[0.589s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.590s] -- Added test 'uncrustify' to check C / C++ code style
+[0.590s] -- Configured uncrustify additional arguments: 
+[0.591s] -- Added test 'xmllint' to check XML markup files
+[0.591s] -- Configuring done
+[0.607s] -- Generating done
+[0.614s] -- Build files have been written to: /home/tharun/cognipilot/cranium/build/synapse_ros
+[0.648s] [35m[1mConsolidate compiler generated dependencies of target synapse_ros[0m
+[0.689s] [ 33%] [32m[1mLinking CXX executable synapse_ros[0m
+[2.729s] [100%] Built target synapse_ros
+[2.739s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_ros' returned '0': CMAKE_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_tinyframe:/home/tharun/cognipilot/cranium/install/synapse_protobuf:/home/tharun/cognipilot/cranium/install/synapse_msgs:/home/tharun/cognipilot/cranium/install/synapse_ros:/home/tharun/cognipilot/cranium/install/synapse_gz:/home/tharun/cognipilot/cranium/install/corti:/home/tharun/cognipilot/cranium/install/dream_world:/home/tharun/cognipilot/cranium/install/cerebri_bringup:/home/tharun/cognipilot/cranium/install/b3rb_simulator:/home/tharun/cognipilot/cranium/install/b3rb_desktop:/home/tharun/cognipilot/cranium/install/b3rb_rviz:/home/tharun/cognipilot/cranium/install/b3rb_nav2:/home/tharun/cognipilot/cranium/install/b3rb_gz_resource:/home/tharun/cognipilot/cranium/install/b3rb_gz_bringup:/home/tharun/cognipilot/cranium/install/b3rb_description:/home/tharun/cognipilot/electrode/install/electrode:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble LD_LIBRARY_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:/home/tharun/cognipilot/cranium/install/synapse_tinyframe/lib:/home/tharun/cognipilot/cranium/install/synapse_protobuf/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/tharun/cognipilot/cranium/build/synapse_ros -- -j12 -l12
+[2.740s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_ros': CMAKE_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_tinyframe:/home/tharun/cognipilot/cranium/install/synapse_protobuf:/home/tharun/cognipilot/cranium/install/synapse_msgs:/home/tharun/cognipilot/cranium/install/synapse_ros:/home/tharun/cognipilot/cranium/install/synapse_gz:/home/tharun/cognipilot/cranium/install/corti:/home/tharun/cognipilot/cranium/install/dream_world:/home/tharun/cognipilot/cranium/install/cerebri_bringup:/home/tharun/cognipilot/cranium/install/b3rb_simulator:/home/tharun/cognipilot/cranium/install/b3rb_desktop:/home/tharun/cognipilot/cranium/install/b3rb_rviz:/home/tharun/cognipilot/cranium/install/b3rb_nav2:/home/tharun/cognipilot/cranium/install/b3rb_gz_resource:/home/tharun/cognipilot/cranium/install/b3rb_gz_bringup:/home/tharun/cognipilot/cranium/install/b3rb_description:/home/tharun/cognipilot/electrode/install/electrode:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble LD_LIBRARY_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:/home/tharun/cognipilot/cranium/install/synapse_tinyframe/lib:/home/tharun/cognipilot/cranium/install/synapse_protobuf/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/tharun/cognipilot/cranium/build/synapse_ros
+[2.747s] -- Install configuration: ""
+[2.747s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/lib/synapse_ros/synapse_ros
+[2.762s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_ros/lib/synapse_ros/synapse_ros" to ""
+[2.762s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/launch
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/launch/synapse_ros.launch.py
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/ament_index/resource_index/package_run_dependencies/synapse_ros
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/ament_index/resource_index/parent_prefix_path/synapse_ros
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/environment/ament_prefix_path.sh
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/environment/ament_prefix_path.dsv
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/environment/path.sh
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/environment/path.dsv
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/local_setup.bash
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/local_setup.sh
+[2.762s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/local_setup.zsh
+[2.763s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/local_setup.dsv
+[2.763s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/package.dsv
+[2.763s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/ament_index/resource_index/packages/synapse_ros
+[2.763s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/cmake/synapse_rosConfig.cmake
+[2.763s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/cmake/synapse_rosConfig-version.cmake
+[2.763s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_ros/share/synapse_ros/package.xml
+[2.765s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_ros' returned '0': CMAKE_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_tinyframe:/home/tharun/cognipilot/cranium/install/synapse_protobuf:/home/tharun/cognipilot/cranium/install/synapse_msgs:/home/tharun/cognipilot/cranium/install/synapse_ros:/home/tharun/cognipilot/cranium/install/synapse_gz:/home/tharun/cognipilot/cranium/install/corti:/home/tharun/cognipilot/cranium/install/dream_world:/home/tharun/cognipilot/cranium/install/cerebri_bringup:/home/tharun/cognipilot/cranium/install/b3rb_simulator:/home/tharun/cognipilot/cranium/install/b3rb_desktop:/home/tharun/cognipilot/cranium/install/b3rb_rviz:/home/tharun/cognipilot/cranium/install/b3rb_nav2:/home/tharun/cognipilot/cranium/install/b3rb_gz_resource:/home/tharun/cognipilot/cranium/install/b3rb_gz_bringup:/home/tharun/cognipilot/cranium/install/b3rb_description:/home/tharun/cognipilot/electrode/install/electrode:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble LD_LIBRARY_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:/home/tharun/cognipilot/cranium/install/synapse_tinyframe/lib:/home/tharun/cognipilot/cranium/install/synapse_protobuf/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/tharun/cognipilot/cranium/build/synapse_ros

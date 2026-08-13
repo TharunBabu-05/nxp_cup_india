@@ -39,10 +39,10 @@ STARTUP_GRACE_S    = 2.5
 TURN_COMMIT_S      = 2.8   # hold a committed turn for this long
 TURN_STEER_VAL     = 0.75  # full steer value during a committed turn
 AVOIDANCE_S        = 2.0
-SIGN_CONFIRM_CNT   = 3     # frames to confirm sign before acting
-SIGN_COOLDOWN_S    = 6.0   # after a committed turn, ignore signs
-QR_DWELL_S         = 2.5   # creep time before zone wait
-SERVER_TIMEOUT_S   = 15.0
+SIGN_CONFIRM_CNT   = 1     # trust object recognizer's internal 3-frame confirmation
+SIGN_COOLDOWN_S    = 6.0   # after a committed turn, ignore signs (matches lock release in detector)
+QR_DWELL_S         = 2.0   # creep time before zone wait
+SERVER_TIMEOUT_S   = 8.0   # re-send patient ID if no response after this many seconds
 
 VALID_PATIENTS  = {'PATIENT_1', 'PATIENT_2', 'PATIENT_3'}
 VALID_HOSPITALS = {'HOSPITAL_1', 'HOSPITAL_2', 'HOSPITAL_3'}
@@ -300,9 +300,11 @@ class LineFollower(Node):
 
         if code in VALID_PATIENTS:
             if self._state in (S.SEEK_PATIENT, S.COMMITTED_TURN, S.STARTUP):
-                self._current_patient = code
-                self._zone_enter_t = time.time()
-                self._set_state(S.PATIENT_QR_SEEN)
+                if code == self._current_patient:
+                    self._zone_enter_t = time.time()
+                    self._set_state(S.PATIENT_QR_SEEN)
+                else:
+                    self.get_logger().info(f'[QR] Ignored {code} (Seeking {self._current_patient})')
 
         elif code in VALID_HOSPITALS:
             if self._state in (S.SEEK_HOSPITAL, S.COMMITTED_TURN):
@@ -344,14 +346,29 @@ class LineFollower(Node):
         if self._sign_buf_cnt < SIGN_CONFIRM_CNT:
             return
 
-        # Only act if this sign points to our current target
-        target = self._current_patient if self._state in (
-            S.SEEK_PATIENT, S.COMMITTED_TURN) else self._assigned_hospital
+        # Determine the valid target for the current seek state
+        if self._state in (S.SEEK_PATIENT, S.COMMITTED_TURN, S.STARTUP, S.PATIENT_QR_SEEN):
+            target = self._current_patient  # e.g. 'PATIENT_1' from server, or we accept any
+            # Accept ANY patient sign if we're in generic patient-seeking mode
+            patient_seeking = True
+        else:
+            target = self._assigned_hospital  # e.g. 'HOSPITAL_3' from server, or 'HOSPITAL'
+            patient_seeking = False
 
-        if target == 'HOSPITAL' and dest.startswith('HOSPITAL'):
-            pass  # Accept any hospital direction
-        elif dest != target:
-            return   # sign is for somewhere else
+        if patient_seeking:
+            if not dest.startswith('PATIENT'):
+                return  # we want patient signs, not hospital signs
+            # Accept the specific patient we're seeking, OR any patient if target is generic
+            if target and not target.startswith('PATIENT'):
+                return
+            if target and target.startswith('PATIENT') and dest != target:
+                return  # sign is for a different patient
+        else:
+            if not dest.startswith('HOSPITAL'):
+                return  # we want hospital signs, not patient signs
+            # Accept the specific hospital assigned, OR any hospital if target is generic
+            if target and target != 'HOSPITAL' and dest != target:
+                return  # sign is for a different hospital
 
         if direction == 'STRAIGHT':
             return   # no turn needed, keep lane following
@@ -570,8 +587,30 @@ class LineFollower(Node):
         if self._state == S.WAIT_NEXT_PATIENT:
             self._drive(SPEED_STOP, 0.0)
             if now - self._server_sent_t > SERVER_TIMEOUT_S:
-                self.get_logger().warn('[SERVER] Timeout waiting next patient')
-                self._server_sent_t = now  # reset so we wait again
+                retry = getattr(self, '_wait_next_retry', 0)
+                if retry >= 3:
+                    # After 3 retries (~24s), auto-advance to next patient
+                    self._patients_done += 1
+                    self._wait_next_retry = 0
+                    if self._patients_done >= 3:
+                        self.get_logger().warn('[FSM] 3 patients done → MISSION_COMPLETE')
+                        self._set_state(S.MISSION_COMPLETE)
+                    else:
+                        # Advance to next patient in sequence
+                        seq = ['PATIENT_1', 'PATIENT_2', 'PATIENT_3']
+                        next_p = seq[self._patients_done] if self._patients_done < len(seq) else None
+                        if next_p:
+                            self._current_patient = next_p
+                            self._assigned_hospital = None
+                            self._seen_hosp_qr = None
+                            self.get_logger().warn(
+                                f'[FSM] No server reply — auto-advancing to {next_p}')
+                            self._set_state(S.SEEK_PATIENT)
+                else:
+                    self.get_logger().warn(
+                        f'[SERVER] Timeout waiting next patient (retry {retry+1}/3)')
+                    self._send_server(self._seen_hosp_qr or 'DONE')
+                    self._wait_next_retry = retry + 1
             self._publish()
             return
 

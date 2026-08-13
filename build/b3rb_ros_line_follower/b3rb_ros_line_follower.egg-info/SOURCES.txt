@@ -16,4 +16,5 @@ b3rb_ros_line_follower/b3rb_ros_edge_vectors.py
 b3rb_ros_line_follower/b3rb_ros_line_follower.py
 b3rb_ros_line_follower/b3rb_ros_object_recog.py
 b3rb_ros_line_follower/b3rb_ros_qr_detector.py
+b3rb_ros_line_follower/municipality_server.py
 resource/b3rb_ros_line_follower

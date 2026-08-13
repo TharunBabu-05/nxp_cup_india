@@ -1,0 +1,1072 @@
+[0.075s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'b3rb_ros_line_follower']
+[0.075s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['b3rb_ros_line_follower'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f2095dbe470>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f2096587ac0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f2096587ac0>>)
+[0.191s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[0.191s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[0.191s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[0.191s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[0.191s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) discover
+[0.192s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[0.192s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/tharun/cognipilot/cranium'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore_ament_install'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_pkg']
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_pkg'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_meta']
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_meta'
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ros']
+[0.192s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ros'
+[0.202s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['cmake', 'python']
+[0.202s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'cmake'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['python_setup_py']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python_setup_py'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'ignore'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'ignore_ament_install'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extensions ['colcon_pkg']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'colcon_pkg'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extensions ['colcon_meta']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'colcon_meta'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extensions ['ros']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'ros'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extensions ['cmake', 'python']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'cmake'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'python'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extensions ['python_setup_py']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026) by extension 'python_setup_py'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'ignore'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'ignore_ament_install'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extensions ['colcon_pkg']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'colcon_pkg'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extensions ['colcon_meta']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'colcon_meta'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extensions ['ros']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'ros'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extensions ['cmake', 'python']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'cmake'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'python'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extensions ['python_setup_py']
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(NXP_CUP_INDIA_2026/Images) by extension 'python_setup_py'
+[0.203s] colcon.colcon_core.package_identification Level 1 _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(build) by extension 'ignore'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(build) ignored
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'ignore'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'ignore_ament_install'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extensions ['colcon_pkg']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'colcon_pkg'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extensions ['colcon_meta']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'colcon_meta'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extensions ['ros']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'ros'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extensions ['cmake', 'python']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'cmake'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'python'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extensions ['python_setup_py']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8) by extension 'python_setup_py'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'ignore'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'ignore_ament_install'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extensions ['colcon_pkg']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'colcon_pkg'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extensions ['colcon_meta']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'colcon_meta'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extensions ['ros']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'ros'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extensions ['cmake', 'python']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'cmake'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'python'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extensions ['python_setup_py']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content) by extension 'python_setup_py'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'ignore'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'ignore_ament_install'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extensions ['colcon_pkg']
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'colcon_pkg'
+[0.204s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extensions ['colcon_meta']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'colcon_meta'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extensions ['ros']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'ros'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extensions ['cmake', 'python']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'cmake'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'python'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extensions ['python_setup_py']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8) by extension 'python_setup_py'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'ignore'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'ignore_ament_install'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extensions ['colcon_pkg']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'colcon_pkg'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extensions ['colcon_meta']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'colcon_meta'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extensions ['ros']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'ros'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extensions ['cmake', 'python']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'cmake'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'python'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extensions ['python_setup_py']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/configs) by extension 'python_setup_py'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'ignore'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'ignore_ament_install'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extensions ['colcon_pkg']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'colcon_pkg'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extensions ['colcon_meta']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'colcon_meta'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extensions ['ros']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'ros'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extensions ['cmake', 'python']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'cmake'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'python'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extensions ['python_setup_py']
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/docs) by extension 'python_setup_py'
+[0.205s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'ignore'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'ignore_ament_install'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extensions ['colcon_pkg']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'colcon_pkg'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extensions ['colcon_meta']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'colcon_meta'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extensions ['ros']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'ros'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extensions ['cmake', 'python']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'cmake'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'python'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extensions ['python_setup_py']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/exports) by extension 'python_setup_py'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'ignore'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'ignore_ament_install'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extensions ['colcon_pkg']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'colcon_pkg'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extensions ['colcon_meta']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'colcon_meta'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extensions ['ros']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'ros'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extensions ['cmake', 'python']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'cmake'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'python'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extensions ['python_setup_py']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/inference) by extension 'python_setup_py'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'ignore'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'ignore_ament_install'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extensions ['colcon_pkg']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'colcon_pkg'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extensions ['colcon_meta']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'colcon_meta'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extensions ['ros']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'ros'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extensions ['cmake', 'python']
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'cmake'
+[0.206s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'python'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extensions ['python_setup_py']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/logs) by extension 'python_setup_py'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'ignore'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'ignore_ament_install'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extensions ['colcon_pkg']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'colcon_pkg'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extensions ['colcon_meta']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'colcon_meta'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extensions ['ros']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'ros'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extensions ['cmake', 'python']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'cmake'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'python'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extensions ['python_setup_py']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models) by extension 'python_setup_py'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'ignore'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'ignore_ament_install'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extensions ['colcon_pkg']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'colcon_pkg'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extensions ['colcon_meta']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'colcon_meta'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extensions ['ros']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'ros'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extensions ['cmake', 'python']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'cmake'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'python'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extensions ['python_setup_py']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new) by extension 'python_setup_py'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'ignore'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'ignore_ament_install'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extensions ['colcon_pkg']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'colcon_pkg'
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extensions ['colcon_meta']
+[0.207s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'colcon_meta'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extensions ['ros']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'ros'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extensions ['cmake', 'python']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'cmake'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'python'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extensions ['python_setup_py']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best) by extension 'python_setup_py'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'ignore'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'ignore_ament_install'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extensions ['colcon_pkg']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'colcon_pkg'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extensions ['colcon_meta']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'colcon_meta'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extensions ['ros']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'ros'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extensions ['cmake', 'python']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'cmake'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'python'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extensions ['python_setup_py']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/new/best/data) by extension 'python_setup_py'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'ignore'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'ignore_ament_install'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extensions ['colcon_pkg']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'colcon_pkg'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extensions ['colcon_meta']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'colcon_meta'
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extensions ['ros']
+[0.208s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'ros'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extensions ['cmake', 'python']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'cmake'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'python'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extensions ['python_setup_py']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/reports) by extension 'python_setup_py'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'ignore'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'ignore_ament_install'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extensions ['colcon_pkg']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'colcon_pkg'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extensions ['colcon_meta']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'colcon_meta'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extensions ['ros']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'ros'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extensions ['cmake', 'python']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'cmake'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'python'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extensions ['python_setup_py']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/results) by extension 'python_setup_py'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'ignore'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'ignore_ament_install'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extensions ['colcon_pkg']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'colcon_pkg'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extensions ['colcon_meta']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'colcon_meta'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extensions ['ros']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'ros'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extensions ['cmake', 'python']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'cmake'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'python'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extensions ['python_setup_py']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs) by extension 'python_setup_py'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'ignore'
+[0.209s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'ignore_ament_install'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extensions ['colcon_pkg']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'colcon_pkg'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extensions ['colcon_meta']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'colcon_meta'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extensions ['ros']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'ros'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extensions ['cmake', 'python']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'cmake'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'python'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extensions ['python_setup_py']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval) by extension 'python_setup_py'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'ignore'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'ignore_ament_install'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extensions ['colcon_pkg']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'colcon_pkg'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extensions ['colcon_meta']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'colcon_meta'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extensions ['ros']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'ros'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extensions ['cmake', 'python']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'cmake'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'python'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extensions ['python_setup_py']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep) by extension 'python_setup_py'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'ignore'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'ignore_ament_install'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extensions ['colcon_pkg']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'colcon_pkg'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extensions ['colcon_meta']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'colcon_meta'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extensions ['ros']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'ros'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extensions ['cmake', 'python']
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'cmake'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'python'
+[0.210s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extensions ['python_setup_py']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.05) by extension 'python_setup_py'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'ignore'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'ignore_ament_install'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extensions ['colcon_pkg']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'colcon_pkg'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extensions ['colcon_meta']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'colcon_meta'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extensions ['ros']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'ros'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extensions ['cmake', 'python']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'cmake'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'python'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extensions ['python_setup_py']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.10) by extension 'python_setup_py'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'ignore'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'ignore_ament_install'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extensions ['colcon_pkg']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'colcon_pkg'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extensions ['colcon_meta']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'colcon_meta'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extensions ['ros']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'ros'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extensions ['cmake', 'python']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'cmake'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'python'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extensions ['python_setup_py']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.15) by extension 'python_setup_py'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'ignore'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'ignore_ament_install'
+[0.211s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extensions ['colcon_pkg']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'colcon_pkg'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extensions ['colcon_meta']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'colcon_meta'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extensions ['ros']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'ros'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extensions ['cmake', 'python']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'cmake'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'python'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extensions ['python_setup_py']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.20) by extension 'python_setup_py'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'ignore'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'ignore_ament_install'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extensions ['colcon_pkg']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'colcon_pkg'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extensions ['colcon_meta']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'colcon_meta'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extensions ['ros']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'ros'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extensions ['cmake', 'python']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'cmake'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'python'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extensions ['python_setup_py']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.25) by extension 'python_setup_py'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'ignore'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'ignore_ament_install'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extensions ['colcon_pkg']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'colcon_pkg'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extensions ['colcon_meta']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'colcon_meta'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extensions ['ros']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'ros'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extensions ['cmake', 'python']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'cmake'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'python'
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extensions ['python_setup_py']
+[0.212s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.30) by extension 'python_setup_py'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'ignore'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'ignore_ament_install'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extensions ['colcon_pkg']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'colcon_pkg'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extensions ['colcon_meta']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'colcon_meta'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extensions ['ros']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'ros'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extensions ['cmake', 'python']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'cmake'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'python'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extensions ['python_setup_py']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.35) by extension 'python_setup_py'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'ignore'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'ignore_ament_install'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extensions ['colcon_pkg']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'colcon_pkg'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extensions ['colcon_meta']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'colcon_meta'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extensions ['ros']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'ros'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extensions ['cmake', 'python']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'cmake'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'python'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extensions ['python_setup_py']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.40) by extension 'python_setup_py'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'ignore'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'ignore_ament_install'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extensions ['colcon_pkg']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'colcon_pkg'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extensions ['colcon_meta']
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'colcon_meta'
+[0.213s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extensions ['ros']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'ros'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extensions ['cmake', 'python']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'cmake'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'python'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extensions ['python_setup_py']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.45) by extension 'python_setup_py'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'ignore'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'ignore_ament_install'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extensions ['colcon_pkg']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'colcon_pkg'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extensions ['colcon_meta']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'colcon_meta'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extensions ['ros']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'ros'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extensions ['cmake', 'python']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'cmake'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'python'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extensions ['python_setup_py']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.50) by extension 'python_setup_py'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'ignore'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'ignore_ament_install'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extensions ['colcon_pkg']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'colcon_pkg'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extensions ['colcon_meta']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'colcon_meta'
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extensions ['ros']
+[0.214s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'ros'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extensions ['cmake', 'python']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'cmake'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'python'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extensions ['python_setup_py']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.55) by extension 'python_setup_py'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'ignore'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'ignore_ament_install'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extensions ['colcon_pkg']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'colcon_pkg'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extensions ['colcon_meta']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'colcon_meta'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extensions ['ros']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'ros'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extensions ['cmake', 'python']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'cmake'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'python'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extensions ['python_setup_py']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.60) by extension 'python_setup_py'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'ignore'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'ignore_ament_install'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extensions ['colcon_pkg']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'colcon_pkg'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extensions ['colcon_meta']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'colcon_meta'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extensions ['ros']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'ros'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extensions ['cmake', 'python']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'cmake'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'python'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extensions ['python_setup_py']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.65) by extension 'python_setup_py'
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'ignore'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'ignore_ament_install'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extensions ['colcon_pkg']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'colcon_pkg'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extensions ['colcon_meta']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'colcon_meta'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extensions ['ros']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'ros'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extensions ['cmake', 'python']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'cmake'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'python'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extensions ['python_setup_py']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.70) by extension 'python_setup_py'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'ignore'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'ignore_ament_install'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extensions ['colcon_pkg']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'colcon_pkg'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extensions ['colcon_meta']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'colcon_meta'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extensions ['ros']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'ros'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extensions ['cmake', 'python']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'cmake'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'python'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extensions ['python_setup_py']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.75) by extension 'python_setup_py'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'ignore'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'ignore_ament_install'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extensions ['colcon_pkg']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'colcon_pkg'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extensions ['colcon_meta']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'colcon_meta'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extensions ['ros']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'ros'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extensions ['cmake', 'python']
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'cmake'
+[0.216s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'python'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extensions ['python_setup_py']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.80) by extension 'python_setup_py'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'ignore'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'ignore_ament_install'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extensions ['colcon_pkg']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'colcon_pkg'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extensions ['colcon_meta']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'colcon_meta'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extensions ['ros']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'ros'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extensions ['cmake', 'python']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'cmake'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'python'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extensions ['python_setup_py']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.85) by extension 'python_setup_py'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'ignore'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'ignore_ament_install'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extensions ['colcon_pkg']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'colcon_pkg'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extensions ['colcon_meta']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'colcon_meta'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extensions ['ros']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'ros'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extensions ['cmake', 'python']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'cmake'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'python'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extensions ['python_setup_py']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/conf_sweep/conf_0.90) by extension 'python_setup_py'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'ignore'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'ignore_ament_install'
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extensions ['colcon_pkg']
+[0.217s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'colcon_pkg'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extensions ['colcon_meta']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'colcon_meta'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extensions ['ros']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'ros'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extensions ['cmake', 'python']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'cmake'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'python'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extensions ['python_setup_py']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/eval/test_20260728_080538) by extension 'python_setup_py'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'ignore'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'ignore_ament_install'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extensions ['colcon_pkg']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'colcon_pkg'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extensions ['colcon_meta']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'colcon_meta'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extensions ['ros']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'ros'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extensions ['cmake', 'python']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'cmake'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'python'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extensions ['python_setup_py']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train) by extension 'python_setup_py'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'ignore'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'ignore_ament_install'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extensions ['colcon_pkg']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'colcon_pkg'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extensions ['colcon_meta']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'colcon_meta'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extensions ['ros']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'ros'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extensions ['cmake', 'python']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'cmake'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'python'
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extensions ['python_setup_py']
+[0.218s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n) by extension 'python_setup_py'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'ignore'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'ignore_ament_install'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extensions ['colcon_pkg']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'colcon_pkg'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extensions ['colcon_meta']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'colcon_meta'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extensions ['ros']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'ros'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extensions ['cmake', 'python']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'cmake'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'python'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extensions ['python_setup_py']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/runs/train/nxpcup_yolov8n/weights) by extension 'python_setup_py'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'ignore'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'ignore_ament_install'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extensions ['colcon_pkg']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'colcon_pkg'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extensions ['colcon_meta']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'colcon_meta'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extensions ['ros']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'ros'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extensions ['cmake', 'python']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'cmake'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'python'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extensions ['python_setup_py']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/scripts) by extension 'python_setup_py'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'ignore'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'ignore_ament_install'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extensions ['colcon_pkg']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'colcon_pkg'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extensions ['colcon_meta']
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'colcon_meta'
+[0.219s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extensions ['ros']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'ros'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extensions ['cmake', 'python']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'cmake'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'python'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extensions ['python_setup_py']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test) by extension 'python_setup_py'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'ignore'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'ignore_ament_install'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extensions ['colcon_pkg']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'colcon_pkg'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extensions ['colcon_meta']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'colcon_meta'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extensions ['ros']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'ros'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extensions ['cmake', 'python']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'cmake'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'python'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extensions ['python_setup_py']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/images) by extension 'python_setup_py'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'ignore'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'ignore_ament_install'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extensions ['colcon_pkg']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'colcon_pkg'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extensions ['colcon_meta']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'colcon_meta'
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extensions ['ros']
+[0.220s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'ros'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extensions ['cmake', 'python']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'cmake'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'python'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extensions ['python_setup_py']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/test/labels) by extension 'python_setup_py'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'ignore'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'ignore_ament_install'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extensions ['colcon_pkg']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'colcon_pkg'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extensions ['colcon_meta']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'colcon_meta'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extensions ['ros']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'ros'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extensions ['cmake', 'python']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'cmake'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'python'
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extensions ['python_setup_py']
+[0.221s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train) by extension 'python_setup_py'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'ignore'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'ignore_ament_install'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extensions ['colcon_pkg']
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'colcon_pkg'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extensions ['colcon_meta']
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'colcon_meta'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extensions ['ros']
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'ros'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extensions ['cmake', 'python']
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'cmake'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'python'
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extensions ['python_setup_py']
+[0.222s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/images) by extension 'python_setup_py'
+[0.223s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'ignore'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'ignore_ament_install'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extensions ['colcon_pkg']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'colcon_pkg'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extensions ['colcon_meta']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'colcon_meta'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extensions ['ros']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'ros'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extensions ['cmake', 'python']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'cmake'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'python'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extensions ['python_setup_py']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/train/labels) by extension 'python_setup_py'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'ignore'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'ignore_ament_install'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extensions ['colcon_pkg']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'colcon_pkg'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extensions ['colcon_meta']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'colcon_meta'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extensions ['ros']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'ros'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extensions ['cmake', 'python']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'cmake'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'python'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extensions ['python_setup_py']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid) by extension 'python_setup_py'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'ignore'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'ignore_ament_install'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extensions ['colcon_pkg']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'colcon_pkg'
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extensions ['colcon_meta']
+[0.224s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'colcon_meta'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extensions ['ros']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'ros'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extensions ['cmake', 'python']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'cmake'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'python'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extensions ['python_setup_py']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/images) by extension 'python_setup_py'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'ignore'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'ignore_ament_install'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extensions ['colcon_pkg']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'colcon_pkg'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extensions ['colcon_meta']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'colcon_meta'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extensions ['ros']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'ros'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extensions ['cmake', 'python']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'cmake'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'python'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extensions ['python_setup_py']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/valid/labels) by extension 'python_setup_py'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(install) by extension 'ignore'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(install) ignored
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(log) by extension 'ignore'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(log) ignored
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore'
+[0.225s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore_ament_install'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_pkg']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_pkg'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_meta']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_meta'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ros']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ros'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['cmake', 'python']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'cmake'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['python_setup_py']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python_setup_py'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'ignore'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'ignore_ament_install'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extensions ['colcon_pkg']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'colcon_pkg'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extensions ['colcon_meta']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'colcon_meta'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extensions ['ros']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'ros'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extensions ['cmake', 'python']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'cmake'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'python'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extensions ['python_setup_py']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb) by extension 'python_setup_py'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extension 'ignore'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extension 'ignore_ament_install'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extensions ['colcon_pkg']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extension 'colcon_pkg'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extensions ['colcon_meta']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extension 'colcon_meta'
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extensions ['ros']
+[0.226s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_description) by extension 'ros'
+[0.228s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb/b3rb_description' with type 'ros.ament_cmake' and name 'b3rb_description'
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extension 'ignore'
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extension 'ignore_ament_install'
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extensions ['colcon_pkg']
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extension 'colcon_pkg'
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extensions ['colcon_meta']
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extension 'colcon_meta'
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extensions ['ros']
+[0.228s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb/b3rb_nav2) by extension 'ros'
+[0.229s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb/b3rb_nav2' with type 'ros.ament_cmake' and name 'b3rb_nav2'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'ignore'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'ignore_ament_install'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extensions ['colcon_pkg']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'colcon_pkg'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extensions ['colcon_meta']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'colcon_meta'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extensions ['ros']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'ros'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extensions ['cmake', 'python']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'cmake'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'python'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extensions ['python_setup_py']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop) by extension 'python_setup_py'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extension 'ignore'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extension 'ignore_ament_install'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extensions ['colcon_pkg']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extension 'colcon_pkg'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extensions ['colcon_meta']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extension 'colcon_meta'
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extensions ['ros']
+[0.229s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_desktop) by extension 'ros'
+[0.230s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb_desktop/b3rb_desktop' with type 'ros.ament_cmake' and name 'b3rb_desktop'
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extension 'ignore'
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extension 'ignore_ament_install'
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extensions ['colcon_pkg']
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extension 'colcon_pkg'
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extensions ['colcon_meta']
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extension 'colcon_meta'
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extensions ['ros']
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_desktop/b3rb_rviz) by extension 'ros'
+[0.230s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb_desktop/b3rb_rviz' with type 'ros.ament_cmake' and name 'b3rb_rviz'
+[0.230s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'ignore'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'ignore_ament_install'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extensions ['colcon_pkg']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'colcon_pkg'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extensions ['colcon_meta']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'colcon_meta'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extensions ['ros']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'ros'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extensions ['cmake', 'python']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'cmake'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'python'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extensions ['python_setup_py']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower) by extension 'python_setup_py'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extension 'ignore'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extension 'ignore_ament_install'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extensions ['colcon_pkg']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extension 'colcon_pkg'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extensions ['colcon_meta']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extension 'colcon_meta'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extensions ['ros']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_ros_line_follower/b3rb_ros_line_follower) by extension 'ros'
+[0.231s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb_ros_line_follower/b3rb_ros_line_follower' with type 'ros.ament_python' and name 'b3rb_ros_line_follower'
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'ignore'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'ignore_ament_install'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extensions ['colcon_pkg']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'colcon_pkg'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extensions ['colcon_meta']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'colcon_meta'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extensions ['ros']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'ros'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extensions ['cmake', 'python']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'cmake'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'python'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extensions ['python_setup_py']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator) by extension 'python_setup_py'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extension 'ignore'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extension 'ignore_ament_install'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extensions ['colcon_pkg']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extension 'colcon_pkg'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extensions ['colcon_meta']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extension 'colcon_meta'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extensions ['ros']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_bringup) by extension 'ros'
+[0.232s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb_simulator/b3rb_gz_bringup' with type 'ros.ament_cmake' and name 'b3rb_gz_bringup'
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extension 'ignore'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extension 'ignore_ament_install'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extensions ['colcon_pkg']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extension 'colcon_pkg'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extensions ['colcon_meta']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extension 'colcon_meta'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extensions ['ros']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_gz_resource) by extension 'ros'
+[0.233s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb_simulator/b3rb_gz_resource' with type 'ros.ament_cmake' and name 'b3rb_gz_resource'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extension 'ignore'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extension 'ignore_ament_install'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extensions ['colcon_pkg']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extension 'colcon_pkg'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extensions ['colcon_meta']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extension 'colcon_meta'
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extensions ['ros']
+[0.233s] colcon.colcon_core.package_identification Level 1 _identify(src/b3rb_simulator/b3rb_simulator) by extension 'ros'
+[0.234s] colcon.colcon_core.package_identification DEBUG Package 'src/b3rb_simulator/b3rb_simulator' with type 'ros.ament_cmake' and name 'b3rb_simulator'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extension 'ignore'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extension 'ignore_ament_install'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extensions ['colcon_pkg']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extension 'colcon_pkg'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extensions ['colcon_meta']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extension 'colcon_meta'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extensions ['ros']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/cerebri_bringup) by extension 'ros'
+[0.234s] colcon.colcon_core.package_identification DEBUG Package 'src/cerebri_bringup' with type 'ros.ament_cmake' and name 'cerebri_bringup'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extension 'ignore'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extension 'ignore_ament_install'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extensions ['colcon_pkg']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extension 'colcon_pkg'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extensions ['colcon_meta']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extension 'colcon_meta'
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extensions ['ros']
+[0.234s] colcon.colcon_core.package_identification Level 1 _identify(src/corti) by extension 'ros'
+[0.236s] colcon.colcon_core.package_identification DEBUG Package 'src/corti' with type 'ros.ament_cmake' and name 'corti'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'ignore'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'ignore_ament_install'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extensions ['colcon_pkg']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'colcon_pkg'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extensions ['colcon_meta']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'colcon_meta'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extensions ['ros']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'ros'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extensions ['cmake', 'python']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'cmake'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'python'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extensions ['python_setup_py']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world) by extension 'python_setup_py'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extension 'ignore'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extension 'ignore_ament_install'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extensions ['colcon_pkg']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extension 'colcon_pkg'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extensions ['colcon_meta']
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extension 'colcon_meta'
+[0.236s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extensions ['ros']
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/dream_world/dream_world) by extension 'ros'
+[0.237s] colcon.colcon_core.package_identification DEBUG Package 'src/dream_world/dream_world' with type 'ros.ament_cmake' and name 'dream_world'
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extension 'ignore'
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extension 'ignore_ament_install'
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extensions ['colcon_pkg']
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extension 'colcon_pkg'
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extensions ['colcon_meta']
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extension 'colcon_meta'
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extensions ['ros']
+[0.237s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_gz) by extension 'ros'
+[0.237s] colcon.colcon_core.package_identification DEBUG Package 'src/synapse_gz' with type 'ros.ament_cmake' and name 'synapse_gz'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extension 'ignore'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extension 'ignore_ament_install'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extensions ['colcon_pkg']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extension 'colcon_pkg'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extensions ['colcon_meta']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extension 'colcon_meta'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extensions ['ros']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_msgs) by extension 'ros'
+[0.238s] colcon.colcon_core.package_identification DEBUG Package 'src/synapse_msgs' with type 'ros.ament_cmake' and name 'synapse_msgs'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extension 'ignore'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extension 'ignore_ament_install'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extensions ['colcon_pkg']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extension 'colcon_pkg'
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extensions ['colcon_meta']
+[0.238s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extension 'colcon_meta'
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extensions ['ros']
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_protobuf) by extension 'ros'
+[0.239s] colcon.colcon_core.package_identification DEBUG Package 'src/synapse_protobuf' with type 'ros.ament_cmake' and name 'synapse_protobuf'
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extension 'ignore'
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extension 'ignore_ament_install'
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extensions ['colcon_pkg']
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extension 'colcon_pkg'
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extensions ['colcon_meta']
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extension 'colcon_meta'
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extensions ['ros']
+[0.239s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_ros) by extension 'ros'
+[0.240s] colcon.colcon_core.package_identification DEBUG Package 'src/synapse_ros' with type 'ros.ament_cmake' and name 'synapse_ros'
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extension 'ignore'
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extension 'ignore_ament_install'
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extensions ['colcon_pkg']
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extension 'colcon_pkg'
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extensions ['colcon_meta']
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extension 'colcon_meta'
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extensions ['ros']
+[0.240s] colcon.colcon_core.package_identification Level 1 _identify(src/synapse_tinyframe) by extension 'ros'
+[0.247s] colcon.colcon_core.package_identification DEBUG Package 'src/synapse_tinyframe' with type 'ros.ament_cmake' and name 'synapse_tinyframe'
+[0.247s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults
+[0.247s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) discover
+[0.247s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) using defaults
+[0.247s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) discover
+[0.247s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) using defaults
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_description' in 'src/b3rb/b3rb_description'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_gz_bringup' in 'src/b3rb_simulator/b3rb_gz_bringup'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_gz_resource' in 'src/b3rb_simulator/b3rb_gz_resource'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_nav2' in 'src/b3rb/b3rb_nav2'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_rviz' in 'src/b3rb_desktop/b3rb_rviz'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'cerebri_bringup' in 'src/cerebri_bringup'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'dream_world' in 'src/dream_world/dream_world'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'synapse_msgs' in 'src/synapse_msgs'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'synapse_protobuf' in 'src/synapse_protobuf'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'synapse_tinyframe' in 'src/synapse_tinyframe'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_desktop' in 'src/b3rb_desktop/b3rb_desktop'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'b3rb_simulator' in 'src/b3rb_simulator/b3rb_simulator'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'corti' in 'src/corti'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'synapse_gz' in 'src/synapse_gz'
+[0.259s] colcon.colcon_core.package_selection INFO Skipping not selected package 'synapse_ros' in 'src/synapse_ros'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'cmake_args' from command line to 'None'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'cmake_target' from command line to 'None'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'cmake_clean_cache' from command line to 'False'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'cmake_clean_first' from command line to 'False'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'cmake_force_configure' from command line to 'False'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'ament_cmake_args' from command line to 'None'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'catkin_cmake_args' from command line to 'None'
+[0.259s] colcon.colcon_core.verb Level 5 set package 'b3rb_ros_line_follower' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.259s] colcon.colcon_core.verb DEBUG Building package 'b3rb_ros_line_follower' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower', 'merge_install': False, 'path': '/home/tharun/cognipilot/cranium/src/b3rb_ros_line_follower/b3rb_ros_line_follower', 'symlink_install': False, 'test_result_base': None}
+[0.259s] colcon.colcon_core.executor INFO Executing jobs using 'parallel' executor
+[0.260s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete
+[0.260s] colcon.colcon_ros.task.ament_python.build INFO Building ROS package in '/home/tharun/cognipilot/cranium/src/b3rb_ros_line_follower/b3rb_ros_line_follower' with build type 'ament_python'
+[0.260s] colcon.colcon_core.shell Level 1 create_environment_hook('b3rb_ros_line_follower', 'ament_prefix_path')
+[0.262s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.262s] colcon.colcon_core.shell INFO Creating environment hook '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/hook/ament_prefix_path.ps1'
+[0.263s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/hook/ament_prefix_path.dsv'
+[0.263s] colcon.colcon_core.shell INFO Creating environment hook '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/hook/ament_prefix_path.sh'
+[0.263s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.263s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.433s] colcon.colcon_core.task.python.build INFO Building Python package in '/home/tharun/cognipilot/cranium/src/b3rb_ros_line_follower/b3rb_ros_line_follower'
+[0.433s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.675s] colcon.colcon_core.task.python.build DEBUG Available setuptools commands: build_py, build_clib, install_lib, egg_info, bdist, symlink_data, compile_catalog, develop, bdist_rpm, build_scripts, extract_messages, upload_docs, upload, test, setopt, install_scripts, register, easy_install, dist_info, sdist, update_catalog, alias, bdist_wheel, install, bdist_dumb, build, install_data, init_catalog, rotate, install_headers, install_egg_info, clean, saveopts, check, bdist_egg, build_ext
+[0.677s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/tharun/cognipilot/cranium/src/b3rb_ros_line_follower/b3rb_ros_line_follower': AMENT_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages:/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/b3rb_ros_line_follower build --build-base /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build install --record /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/install.log --install-scripts $base/lib/b3rb_ros_line_follower --single-version-externally-managed install_data
+[0.872s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/tharun/cognipilot/cranium/src/b3rb_ros_line_follower/b3rb_ros_line_follower' returned '0': AMENT_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages:/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/b3rb_ros_line_follower build --build-base /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build install --record /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/install.log --install-scripts $base/lib/b3rb_ros_line_follower --single-version-externally-managed install_data
+[0.874s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower' for CMake module files
+[0.874s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower' for CMake config files
+[0.875s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib'
+[0.875s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/bin'
+[0.875s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/pkgconfig/b3rb_ros_line_follower.pc'
+[0.875s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages'
+[0.875s] colcon.colcon_core.shell Level 1 create_environment_hook('b3rb_ros_line_follower', 'pythonpath')
+[0.875s] colcon.colcon_core.shell INFO Creating environment hook '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/hook/pythonpath.ps1'
+[0.875s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/hook/pythonpath.dsv'
+[0.876s] colcon.colcon_core.shell INFO Creating environment hook '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/hook/pythonpath.sh'
+[0.876s] colcon.colcon_core.environment Level 1 checking '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/bin'
+[0.876s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(b3rb_ros_line_follower)
+[0.876s] colcon.colcon_core.shell INFO Creating package script '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/package.ps1'
+[0.877s] colcon.colcon_core.shell INFO Creating package descriptor '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/package.dsv'
+[0.877s] colcon.colcon_core.shell INFO Creating package script '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/package.sh'
+[0.878s] colcon.colcon_core.shell INFO Creating package script '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/package.bash'
+[0.878s] colcon.colcon_core.shell INFO Creating package script '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/b3rb_ros_line_follower/package.zsh'
+[0.879s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/share/colcon-core/packages/b3rb_ros_line_follower)
+[0.879s] colcon.colcon_parallel_executor.executor.parallel DEBUG closing loop
+[0.879s] colcon.colcon_parallel_executor.executor.parallel DEBUG loop closed
+[0.879s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete finished with '0'
+[0.879s] colcon.colcon_core.event_reactor DEBUG joining thread
+[0.883s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.883s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.883s] colcon.colcon_notification.desktop_notification INFO Sending desktop notification using 'notify2'
+[0.899s] colcon.colcon_core.event_reactor DEBUG joined thread
+[0.899s] colcon.colcon_core.shell INFO Creating prefix script '/home/tharun/cognipilot/cranium/install/local_setup.ps1'
+[0.900s] colcon.colcon_core.shell INFO Creating prefix util module '/home/tharun/cognipilot/cranium/install/_local_setup_util_ps1.py'
+[0.902s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/tharun/cognipilot/cranium/install/setup.ps1'
+[0.904s] colcon.colcon_core.shell INFO Creating prefix script '/home/tharun/cognipilot/cranium/install/local_setup.sh'
+[0.904s] colcon.colcon_core.shell INFO Creating prefix util module '/home/tharun/cognipilot/cranium/install/_local_setup_util_sh.py'
+[0.905s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/tharun/cognipilot/cranium/install/setup.sh'
+[0.907s] colcon.colcon_core.shell INFO Creating prefix script '/home/tharun/cognipilot/cranium/install/local_setup.bash'
+[0.907s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/tharun/cognipilot/cranium/install/setup.bash'
+[0.908s] colcon.colcon_core.shell INFO Creating prefix script '/home/tharun/cognipilot/cranium/install/local_setup.zsh'
+[0.909s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/tharun/cognipilot/cranium/install/setup.zsh'

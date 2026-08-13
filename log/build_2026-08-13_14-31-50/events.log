@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000051] (-) JobUnselected: {'identifier': 'b3rb_description'}
+[0.000069] (-) JobUnselected: {'identifier': 'b3rb_desktop'}
+[0.000082] (-) JobUnselected: {'identifier': 'b3rb_gz_bringup'}
+[0.000094] (-) JobUnselected: {'identifier': 'b3rb_gz_resource'}
+[0.000104] (-) JobUnselected: {'identifier': 'b3rb_nav2'}
+[0.000114] (-) JobUnselected: {'identifier': 'b3rb_rviz'}
+[0.000124] (-) JobUnselected: {'identifier': 'b3rb_simulator'}
+[0.000133] (-) JobUnselected: {'identifier': 'cerebri_bringup'}
+[0.000142] (-) JobUnselected: {'identifier': 'corti'}
+[0.000152] (-) JobUnselected: {'identifier': 'dream_world'}
+[0.000161] (-) JobUnselected: {'identifier': 'synapse_gz'}
+[0.000170] (-) JobUnselected: {'identifier': 'synapse_msgs'}
+[0.000179] (-) JobUnselected: {'identifier': 'synapse_protobuf'}
+[0.000192] (-) JobUnselected: {'identifier': 'synapse_ros'}
+[0.000202] (-) JobUnselected: {'identifier': 'synapse_tinyframe'}
+[0.000213] (b3rb_ros_line_follower) JobQueued: {'identifier': 'b3rb_ros_line_follower', 'dependencies': OrderedDict([('synapse_msgs', '/home/tharun/cognipilot/cranium/install/synapse_msgs')])}
+[0.000267] (b3rb_ros_line_follower) JobStarted: {'identifier': 'b3rb_ros_line_follower'}
+[0.099507] (-) TimerEvent: {}
+[0.199668] (-) TimerEvent: {}
+[0.299820] (-) TimerEvent: {}
+[0.400003] (-) TimerEvent: {}
+[0.400376] (b3rb_ros_line_follower) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/b3rb_ros_line_follower', 'build', '--build-base', '/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build', 'install', '--record', '/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/install.log', '--install-scripts', '$base/lib/b3rb_ros_line_follower', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/tharun/cognipilot/cranium/src/b3rb_ros_line_follower/b3rb_ros_line_follower', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/tharun', 'PYTHONWARNINGS': 'ignore:::setuptools.installer,ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install', 'CCACHE_TEMPDIR': '/tmp/ccache', 'LANGUAGE': 'en_IN:en', 'USER': 'tharun', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-gb","osLocale":"en-in","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/antigravity/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/tharun', 'CHROME_DESKTOP': 'antigravity.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-81e22ab7-1.10-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/antigravity.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge:appmenu-gtk-module', 'PAGER': 'cat', 'MANAGERPID': '1479', 'SYSTEMD_EXEC_PID': '1655', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '32772', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/tharun/cognipilot/electrode/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'tharun', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:9856', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'tharun', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'ANTIGRAVITY_EDITOR_APP_ROOT': '/usr/share/antigravity/resources/app', 'PATH': '/home/tharun/.local/bin:/home/tharun/bin:/home/tharun/cognipilot/ws/cerebri/install/bin:/opt/ros/humble/bin:/home/tharun/.local/bin:/home/tharun/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/tharun:@/tmp/.ICE-unix/1615,unix/tharun:/tmp/.ICE-unix/1615', 'INVOCATION_ID': 'ae73b0871f9f4627ba95eabb41107f17', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'LANG': 'en_IN', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7RZLT3', 'LS_COLORS': '', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/tharun/cognipilot/cranium/install/synapse_msgs:/home/tharun/cognipilot/electrode/install/electrode:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_EXPORT_COMPILE_COMMANDS': 'ON', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'ANTIGRAVITY_TRAJECTORY_ID': '35b5a066-8889-41a5-be4b-f087a2726b75', 'PWD': '/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/tharun/.config/Antigravity/CachedData/15487b3041e65228cae24980a3f796c905ef582c', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages:/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/tharun/cognipilot/cranium/install/synapse_msgs:/home/tharun/cognipilot/electrode/install/electrode', 'VSCODE_PID': '32772'}, 'shell': False}
+[0.500137] (-) TimerEvent: {}
+[0.552643] (b3rb_ros_line_follower) StdoutLine: {'line': b'running egg_info\n'}
+[0.553040] (b3rb_ros_line_follower) StdoutLine: {'line': b'writing ../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/PKG-INFO\n'}
+[0.553156] (b3rb_ros_line_follower) StdoutLine: {'line': b'writing dependency_links to ../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/dependency_links.txt\n'}
+[0.553285] (b3rb_ros_line_follower) StdoutLine: {'line': b'writing entry points to ../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/entry_points.txt\n'}
+[0.553324] (b3rb_ros_line_follower) StdoutLine: {'line': b'writing requirements to ../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/requires.txt\n'}
+[0.553355] (b3rb_ros_line_follower) StdoutLine: {'line': b'writing top-level names to ../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/top_level.txt\n'}
+[0.554456] (b3rb_ros_line_follower) StdoutLine: {'line': b"reading manifest file '../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/SOURCES.txt'\n"}
+[0.554542] (b3rb_ros_line_follower) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.555012] (b3rb_ros_line_follower) StdoutLine: {'line': b"writing manifest file '../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info/SOURCES.txt'\n"}
+[0.555050] (b3rb_ros_line_follower) StdoutLine: {'line': b'running build\n'}
+[0.555080] (b3rb_ros_line_follower) StdoutLine: {'line': b'running build_py\n'}
+[0.555152] (b3rb_ros_line_follower) StdoutLine: {'line': b'copying b3rb_ros_line_follower/b3rb_ros_line_follower.py -> /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build/lib/b3rb_ros_line_follower\n'}
+[0.555263] (b3rb_ros_line_follower) StdoutLine: {'line': b'copying b3rb_ros_line_follower/municipality_server.py -> /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build/lib/b3rb_ros_line_follower\n'}
+[0.555491] (b3rb_ros_line_follower) StdoutLine: {'line': b'running install\n'}
+[0.555702] (b3rb_ros_line_follower) StdoutLine: {'line': b'running install_lib\n'}
+[0.556172] (b3rb_ros_line_follower) StdoutLine: {'line': b'copying /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build/lib/b3rb_ros_line_follower/b3rb_ros_line_follower.py -> /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages/b3rb_ros_line_follower\n'}
+[0.556268] (b3rb_ros_line_follower) StdoutLine: {'line': b'copying /home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/build/lib/b3rb_ros_line_follower/municipality_server.py -> /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages/b3rb_ros_line_follower\n'}
+[0.556772] (b3rb_ros_line_follower) StdoutLine: {'line': b'byte-compiling /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages/b3rb_ros_line_follower/b3rb_ros_line_follower.py to b3rb_ros_line_follower.cpython-310.pyc\n'}
+[0.559410] (b3rb_ros_line_follower) StdoutLine: {'line': b'byte-compiling /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages/b3rb_ros_line_follower/municipality_server.py to municipality_server.cpython-310.pyc\n'}
+[0.560342] (b3rb_ros_line_follower) StdoutLine: {'line': b'running install_data\n'}
+[0.560407] (b3rb_ros_line_follower) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.561641] (b3rb_ros_line_follower) StdoutLine: {'line': b"removing '/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages/b3rb_ros_line_follower-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.561805] (b3rb_ros_line_follower) StdoutLine: {'line': b'Copying ../../../build/b3rb_ros_line_follower/b3rb_ros_line_follower.egg-info to /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/python3.10/site-packages/b3rb_ros_line_follower-0.0.0-py3.10.egg-info\n'}
+[0.562215] (b3rb_ros_line_follower) StdoutLine: {'line': b'running install_scripts\n'}
+[0.575891] (b3rb_ros_line_follower) StdoutLine: {'line': b'Installing detect script to /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/b3rb_ros_line_follower\n'}
+[0.576219] (b3rb_ros_line_follower) StdoutLine: {'line': b'Installing municipality_server script to /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/b3rb_ros_line_follower\n'}
+[0.576300] (b3rb_ros_line_follower) StdoutLine: {'line': b'Installing qr_detect script to /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/b3rb_ros_line_follower\n'}
+[0.576349] (b3rb_ros_line_follower) StdoutLine: {'line': b'Installing runner script to /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/b3rb_ros_line_follower\n'}
+[0.576391] (b3rb_ros_line_follower) StdoutLine: {'line': b'Installing vectors script to /home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower/lib/b3rb_ros_line_follower\n'}
+[0.576585] (b3rb_ros_line_follower) StdoutLine: {'line': b"writing list of installed files to '/home/tharun/cognipilot/cranium/build/b3rb_ros_line_follower/install.log'\n"}
+[0.594153] (b3rb_ros_line_follower) CommandEnded: {'returncode': 0}
+[0.600326] (-) TimerEvent: {}
+[0.604540] (b3rb_ros_line_follower) JobEnded: {'identifier': 'b3rb_ros_line_follower', 'rc': 0}
+[0.604901] (-) EventReactorShutdown: {}

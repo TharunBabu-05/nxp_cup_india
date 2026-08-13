@@ -21,7 +21,7 @@ import numpy as np
 import os
 import time
 
-# ── YOLOv8 (ultralytics) via torch ───────────────────────────────
+# ── YOLOv8 (ultralytics) via torch / ONNX ────────────────────────
 try:
     from ultralytics import YOLO
     YOLO_AVAILABLE = True
@@ -29,12 +29,12 @@ except ImportError:
     YOLO_AVAILABLE = False
 
 # ── Tuning ────────────────────────────────────────────────────────
-CONF_THRESHOLD      = 0.55   # minimum detection confidence
-SIGN_CONFIRM_COUNT  = 3      # consecutive frames before publishing
-PUBLISH_COOLDOWN_S  = 1.0    # seconds between publishing the same sign
+CONF_THRESHOLD      = 0.50   # minimum detection confidence
+SIGN_CONFIRM_COUNT  = 3      # consecutive frames before locking a sign
+LOCK_PUBLISH_HZ     = 2.0    # while locked, re-publish at this rate (seconds)
+LOCK_RELEASE_S      = 6.0    # release the lock after this many seconds (safety)
 
-# YOLOv8 classes (must match data.yaml order):
-# ['A', 'B', 'C', 'Left', 'Right', 'Straight', 'X', 'Y', 'Z']
+# YOLOv8 classes  (MUST match data.yaml order in the new model):
 CLASS_NAMES = ['A', 'B', 'C', 'Left', 'Right', 'Straight', 'X', 'Y', 'Z']
 
 # Mapping to canonical topic strings
@@ -52,15 +52,27 @@ DIRECTION_MAP = {
     'Straight': 'STRAIGHT',
 }
 
+# ── New model path ────────────────────────────────────────────────
+NEW_MODEL_PATH = os.path.join(
+    os.path.expanduser('~'),
+    'cognipilot', 'cranium',
+    'created_model_NXPCUP_2026.v2-v1_yolov8',
+    'content', 'NXPCUP_2026.v2-v1_a.yolov8',
+    'new', 'best.onnx')
+
+FALLBACK_MODEL_PATH = os.path.join(
+    os.path.expanduser('~'),
+    'cognipilot', 'cranium',
+    'created_model_NXPCUP_2026.v2-v1_yolov8',
+    'content', 'NXPCUP_2026.v2-v1_a.yolov8',
+    'models', 'best.pt')
+
 
 class ObjectRecognizer(Node):
     """
-    ROS 2 Node that classifies traffic sign boards using the supplied YOLOv8 model.
-    Falls back to a Keras/OpenCV placeholder if the model is absent.
-
-    Published topic: /sign_board_detection
-    Message format:  "<DESTINATION>:<DIRECTION>"
-    Example:         "HOSPITAL_2:LEFT"
+    ROS 2 Node that classifies traffic sign boards using the new ONNX YOLOv8 model.
+    It matches multiple destinations and directions per frame using X-coordinate proximity
+    (since arrows are directly underneath letters on the sign board).
     """
 
     def __init__(self):
@@ -77,142 +89,138 @@ class ObjectRecognizer(Node):
         self.model = None
         self._load_model()
 
-        self._last_dest = None
-        self._last_dest_time = 0.0
-        self._last_dir = None
-        self._last_dir_time = 0.0
+        # Track consecutive detections for each unique sign string independently
+        self._candidates = {}  # dict[sign_str, count]
 
-        # Debounce state
-        self._candidate: str = ''
-        self._candidate_count: int = 0
-        self._last_published: str = ''
-        self._last_publish_time: float = 0.0
+        # Locked signs (we can lock multiple simultaneously if they are all on the board)
+        self._locked_signs = {} # dict[sign_str, (lock_start_time, last_publish_time)]
 
-        self.get_logger().info('[DETECT] Object Recognizer ready.')
+        self.get_logger().info('[DETECT] Object Recognizer ready (Multi-sign spatial pairing).')
 
-    # ── model loading ─────────────────────────────────────────────
     def _load_model(self):
-        """Try to load the YOLOv8 best.pt from the created_model directory."""
         if not YOLO_AVAILABLE:
             self.get_logger().warn('[DETECT] ultralytics not installed; sign detection disabled.')
             return
 
-        # Search path: alongside this script, or in created_model directory
-        candidates = [
-            os.path.join(
-                os.path.expanduser('~'),
-                'cognipilot', 'cranium',
-                'created_model_NXPCUP_2026.v2-v1_yolov8',
-                'content', 'NXPCUP_2026.v2-v1_a.yolov8',
-                'models', 'best.pt'),
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), 'best.pt'),
-        ]
-
+        candidates = [NEW_MODEL_PATH, FALLBACK_MODEL_PATH]
         for path in candidates:
             if os.path.exists(path):
                 try:
-                    self.model = YOLO(path)
-                    self.get_logger().info(f'[DETECT] Loaded YOLOv8 model from {path}')
+                    self.model = YOLO(path, task='detect')
+                    self.get_logger().info(f'[DETECT] Loaded model from {path}')
                     return
                 except Exception as e:
-                    self.get_logger().error(f'[DETECT] Failed to load model: {e}')
+                    self.get_logger().error(f'[DETECT] Failed to load {path}: {e}')
 
-        self.get_logger().warn('[DETECT] YOLOv8 model not found. Sign detection disabled.')
+        self.get_logger().warn('[DETECT] No model found. Sign detection disabled.')
 
-    # ── camera callback ───────────────────────────────────────────
     def camera_image_callback(self, message):
         np_arr = np.frombuffer(message.data, np.uint8)
-        image   = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+        image  = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
         if image is None:
-            return
-
-        result = self.classify_sign(image)
-        if result is None:
-            self._candidate_count = 0
             return
 
         now = time.time()
 
-        # Consecutive-frame confirmation
-        if result == self._candidate:
-            self._candidate_count += 1
-        else:
-            self._candidate       = result
-            self._candidate_count = 1
+        # ── Handle Locked Signs ──
+        active_locks = []
+        for sign, (start_t, last_pub_t) in list(self._locked_signs.items()):
+            if now - start_t < LOCK_RELEASE_S:
+                if now - last_pub_t >= (1.0 / LOCK_PUBLISH_HZ):
+                    self._publish(sign)
+                    self._locked_signs[sign] = (start_t, now)
+                active_locks.append(sign)
+            else:
+                self.get_logger().info(f'[DETECT] Lock released: {sign}')
+                del self._locked_signs[sign]
+                if sign in self._candidates:
+                    del self._candidates[sign]
 
-        if self._candidate_count < SIGN_CONFIRM_COUNT:
-            return
+        # ── Fresh inference ──
+        detected_signs = self._classify(image)
+        
+        # Update candidate counts
+        new_candidates = {}
+        for sign in detected_signs:
+            # Skip if already locked
+            if sign in self._locked_signs:
+                continue
+                
+            cnt = self._candidates.get(sign, 0) + 1
+            new_candidates[sign] = cnt
+            
+            if cnt >= SIGN_CONFIRM_COUNT:
+                # LOCK this sign
+                self._locked_signs[sign] = (now, 0.0) # 0.0 forces immediate publish next tick
+                self.get_logger().info(f'[DETECT] LOCKED sign: {sign}')
+                new_candidates[sign] = 0 # reset
+                
+        self._candidates = new_candidates
 
-        # Same-result cooldown
-        if result == self._last_published:
-            if now - self._last_publish_time < PUBLISH_COOLDOWN_S:
-                return
-
-        self._last_published    = result
-        self._last_publish_time = now
-
+    def _publish(self, sign: str):
         msg = String()
-        msg.data = result
+        msg.data = sign
         self.publisher_sign.publish(msg)
-        self.get_logger().info(f'[DETECT] Sign published: {result}')
+        self.get_logger().info(f'[DETECT] Sign published: {sign}')
 
-    # ── classification ────────────────────────────────────────────
-    def classify_sign(self, image):
+    def _classify(self, image):
         """
-        Run YOLOv8 inference.
-        Returns a string like "HOSPITAL_2:LEFT" or None.
+        Returns a list of sign strings found in this frame.
+        Pairs each destination with the direction directly below it (closest X).
         """
         if self.model is None:
-            return None
+            return []
 
         try:
             results = self.model(image, verbose=False, conf=CONF_THRESHOLD)
             if not results or len(results) == 0:
-                pass
-            else:
-                boxes = results[0].boxes
-                if boxes is not None and len(boxes) > 0:
-                    # Collect destination and direction detections separately
-                    destination_hits = []  # (conf, label_str)
-                    direction_hits   = []  # (conf, label_str)
+                return []
 
-                    for box in boxes:
-                        cls_id = int(box.cls[0].item())
-                        conf   = float(box.conf[0].item())
-                        if cls_id >= len(CLASS_NAMES):
-                            continue
-                        label = CLASS_NAMES[cls_id]
+            boxes = results[0].boxes
+            if boxes is None or len(boxes) == 0:
+                return []
 
-                        if label in DESTINATION_MAP:
-                            destination_hits.append((conf, DESTINATION_MAP[label]))
-                        elif label in DIRECTION_MAP:
-                            direction_hits.append((conf, DIRECTION_MAP[label]))
+            destination_hits = []  # (conf, label_str, cx, cy)
+            direction_hits   = []  # (conf, label_str, cx, cy)
 
-                    if destination_hits:
-                        best_dest = max(destination_hits, key=lambda x: x[0])[1]
-                        self._last_dest = best_dest
-                        self._last_dest_time = time.time()
-                        
-                    if direction_hits:
-                        best_dir = max(direction_hits, key=lambda x: x[0])[1]
-                        self._last_dir = best_dir
-                        self._last_dir_time = time.time()
+            for box in boxes:
+                cls_id = int(box.cls[0].item())
+                conf   = float(box.conf[0].item())
+                if cls_id >= len(CLASS_NAMES):
+                    continue
+                label = CLASS_NAMES[cls_id]
+                
+                coords = box.xyxy[0].tolist()
+                cx = (coords[0] + coords[2]) / 2.0
+                cy = (coords[1] + coords[3]) / 2.0
+
+                if label in DESTINATION_MAP:
+                    destination_hits.append((conf, DESTINATION_MAP[label], cx, cy))
+                elif label in DIRECTION_MAP:
+                    direction_hits.append((conf, DIRECTION_MAP[label], cx, cy))
+
+            found_signs = []
             
-            now = time.time()
-            dest = self._last_dest if (now - self._last_dest_time < 2.5) else None
-            dir_ = self._last_dir if (now - self._last_dir_time < 2.5) else None
-            
-            if dest and dir_:
-                return f'{dest}:{dir_}'
-            elif dest:
-                return f'{dest}:STRAIGHT'
-            elif dir_:
-                return f'UNKNOWN:{dir_}'
+            # For each destination, find the horizontally closest direction arrow
+            for dest_conf, dest_label, dest_cx, dest_cy in destination_hits:
+                if direction_hits:
+                    # Find arrow with minimum X-axis distance to the letter
+                    best_dir = min(direction_hits, key=lambda d: abs(d[2] - dest_cx))
+                    
+                    # Optional: We could check if it's within a reasonable threshold, 
+                    # but since they are on the same board, min X distance is robust.
+                    dir_label = best_dir[1]
+                    found_signs.append(f'{dest_label}:{dir_label}')
+                else:
+                    # If absolutely no arrows detected, fallback to straight
+                    found_signs.append(f'{dest_label}:STRAIGHT')
+
+            return found_signs
 
         except Exception as e:
             self.get_logger().debug(f'[DETECT] Inference error: {e}')
 
-        return None
+        return []
 
 
 def main(args=None):
