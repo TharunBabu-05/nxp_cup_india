@@ -71,8 +71,17 @@ FALLBACK_MODEL_PATH = os.path.join(
 class ObjectRecognizer(Node):
     """
     ROS 2 Node that classifies traffic sign boards using the new ONNX YOLOv8 model.
-    It matches multiple destinations and directions per frame using X-coordinate proximity
-    (since arrows are directly underneath letters on the sign board).
+
+    Sign-lock behaviour
+    ───────────────────
+    Once SIGN_CONFIRM_COUNT consecutive frames agree on a (destination, direction)
+    pair, the node LOCKS onto that reading and re-publishes it at LOCK_PUBLISH_HZ
+    until LOCK_RELEASE_S seconds have elapsed.  This prevents the buggy from
+    missing the turn command because the detection blinked for only one frame.
+
+    Published topic: /sign_board_detection
+    Message format:  "<DESTINATION>:<DIRECTION>"
+    Example:         "PATIENT_1:RIGHT"
     """
 
     def __init__(self):
@@ -89,20 +98,32 @@ class ObjectRecognizer(Node):
         self.model = None
         self._load_model()
 
-        # Track consecutive detections for each unique sign string independently
-        self._candidates = {}  # dict[sign_str, count]
+        # Per-frame detection buffers (for this frame only, no carry-over)
+        self._last_dest = None
+        self._last_dest_time = 0.0
+        self._last_dir = None
+        self._last_dir_time = 0.0
 
-        # Locked signs (we can lock multiple simultaneously if they are all on the board)
-        self._locked_signs = {} # dict[sign_str, (lock_start_time, last_publish_time)]
+        # Consecutive-frame confirmation window
+        self._candidate: str = ''
+        self._candidate_count: int = 0
 
-        self.get_logger().info('[DETECT] Object Recognizer ready (Multi-sign spatial pairing).')
+        # Sign-lock state
+        self._locked_sign: str = ''          # e.g. "PATIENT_1:RIGHT"
+        self._lock_start_t: float = 0.0      # when the lock was acquired
+        self._last_lock_publish_t: float = 0.0
 
+        self.get_logger().info('[DETECT] Object Recognizer ready (new ONNX model, sign-lock).')
+
+    # ── model loading ─────────────────────────────────────────────
     def _load_model(self):
+        """Load the new ONNX model, fall back to old .pt if unavailable."""
         if not YOLO_AVAILABLE:
             self.get_logger().warn('[DETECT] ultralytics not installed; sign detection disabled.')
             return
 
         candidates = [NEW_MODEL_PATH, FALLBACK_MODEL_PATH]
+
         for path in candidates:
             if os.path.exists(path):
                 try:
@@ -114,6 +135,7 @@ class ObjectRecognizer(Node):
 
         self.get_logger().warn('[DETECT] No model found. Sign detection disabled.')
 
+    # ── camera callback ───────────────────────────────────────────
     def camera_image_callback(self, message):
         np_arr = np.frombuffer(message.data, np.uint8)
         image  = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
@@ -122,66 +144,75 @@ class ObjectRecognizer(Node):
 
         now = time.time()
 
-        # ── Handle Locked Signs ──
-        active_locks = []
-        for sign, (start_t, last_pub_t) in list(self._locked_signs.items()):
-            if now - start_t < LOCK_RELEASE_S:
-                if now - last_pub_t >= (1.0 / LOCK_PUBLISH_HZ):
-                    self._publish(sign)
-                    self._locked_signs[sign] = (start_t, now)
-                active_locks.append(sign)
+        # ── If locked, keep re-publishing until the lock expires ──
+        if self._locked_sign:
+            if now - self._lock_start_t < LOCK_RELEASE_S:
+                if now - self._last_lock_publish_t >= (1.0 / LOCK_PUBLISH_HZ):
+                    self._publish(self._locked_sign)
+                    self._last_lock_publish_t = now
+                return   # do NOT run fresh inference while locked
             else:
-                self.get_logger().info(f'[DETECT] Lock released: {sign}')
-                del self._locked_signs[sign]
-                if sign in self._candidates:
-                    del self._candidates[sign]
+                self.get_logger().info(
+                    f'[DETECT] Lock released: {self._locked_sign}')
+                self._locked_sign = ''
+                self._candidate   = ''
+                self._candidate_count = 0
 
-        # ── Fresh inference ──
-        detected_signs = self._classify(image)
-        
-        # Update candidate counts
-        new_candidates = {}
-        for sign in detected_signs:
-            # Skip if already locked
-            if sign in self._locked_signs:
-                continue
-                
-            cnt = self._candidates.get(sign, 0) + 1
-            new_candidates[sign] = cnt
-            
-            if cnt >= SIGN_CONFIRM_COUNT:
-                # LOCK this sign
-                self._locked_signs[sign] = (now, 0.0) # 0.0 forces immediate publish next tick
-                self.get_logger().info(f'[DETECT] LOCKED sign: {sign}')
-                new_candidates[sign] = 0 # reset
-                
-        self._candidates = new_candidates
+        # ── Fresh inference ───────────────────────────────────────
+        result = self._classify(image)
 
+        if result is None:
+            # No detection → reset confirmation window
+            self._candidate_count = 0
+            return
+
+        # Accumulate consecutive confirmations
+        if result == self._candidate:
+            self._candidate_count += 1
+        else:
+            self._candidate       = result
+            self._candidate_count = 1
+
+        if self._candidate_count >= SIGN_CONFIRM_COUNT:
+            # LOCK this sign
+            self._locked_sign          = result
+            self._lock_start_t         = now
+            self._last_lock_publish_t  = 0.0   # force immediate publish
+            self._candidate_count      = 0
+            self.get_logger().info(
+                f'[DETECT] LOCKED sign: {result}')
+
+    # ── publish helper ────────────────────────────────────────────
     def _publish(self, sign: str):
         msg = String()
         msg.data = sign
         self.publisher_sign.publish(msg)
         self.get_logger().info(f'[DETECT] Sign published: {sign}')
 
+    # ── YOLOv8 inference ─────────────────────────────────────────
     def _classify(self, image):
         """
-        Returns a list of sign strings found in this frame.
-        Pairs each destination with the direction directly below it (closest X).
+        Run YOLOv8 inference on a single frame.
+        Returns a string like "HOSPITAL_2:LEFT" or None.
+
+        This method does NOT use any time-based carry-over cache — it looks
+        ONLY at what is visible right now.  Dest + Dir must both appear in
+        the same frame for a result to be returned.
         """
         if self.model is None:
-            return []
+            return None
 
         try:
             results = self.model(image, verbose=False, conf=CONF_THRESHOLD)
             if not results or len(results) == 0:
-                return []
+                return None
 
             boxes = results[0].boxes
             if boxes is None or len(boxes) == 0:
-                return []
+                return None
 
-            destination_hits = []  # (conf, label_str, cx, cy)
-            direction_hits   = []  # (conf, label_str, cx, cy)
+            destination_hits = []  # (conf, label_str)
+            direction_hits   = []  # (conf, label_str)
 
             for box in boxes:
                 cls_id = int(box.cls[0].item())
@@ -189,38 +220,27 @@ class ObjectRecognizer(Node):
                 if cls_id >= len(CLASS_NAMES):
                     continue
                 label = CLASS_NAMES[cls_id]
-                
-                coords = box.xyxy[0].tolist()
-                cx = (coords[0] + coords[2]) / 2.0
-                cy = (coords[1] + coords[3]) / 2.0
 
                 if label in DESTINATION_MAP:
-                    destination_hits.append((conf, DESTINATION_MAP[label], cx, cy))
+                    destination_hits.append((conf, DESTINATION_MAP[label]))
                 elif label in DIRECTION_MAP:
-                    direction_hits.append((conf, DIRECTION_MAP[label], cx, cy))
+                    direction_hits.append((conf, DIRECTION_MAP[label]))
 
-            found_signs = []
-            
-            # For each destination, find the horizontally closest direction arrow
-            for dest_conf, dest_label, dest_cx, dest_cy in destination_hits:
-                if direction_hits:
-                    # Find arrow with minimum X-axis distance to the letter
-                    best_dir = min(direction_hits, key=lambda d: abs(d[2] - dest_cx))
-                    
-                    # Optional: We could check if it's within a reasonable threshold, 
-                    # but since they are on the same board, min X distance is robust.
-                    dir_label = best_dir[1]
-                    found_signs.append(f'{dest_label}:{dir_label}')
-                else:
-                    # If absolutely no arrows detected, fallback to straight
-                    found_signs.append(f'{dest_label}:STRAIGHT')
+            # Both destination AND direction must be detected in the same frame
+            if destination_hits and direction_hits:
+                best_dest = max(destination_hits, key=lambda x: x[0])[1]
+                best_dir  = max(direction_hits,   key=lambda x: x[0])[1]
+                return f'{best_dest}:{best_dir}'
 
-            return found_signs
+            # Destination only → default to STRAIGHT (don't turn)
+            if destination_hits:
+                best_dest = max(destination_hits, key=lambda x: x[0])[1]
+                return f'{best_dest}:STRAIGHT'
 
         except Exception as e:
             self.get_logger().debug(f'[DETECT] Inference error: {e}')
 
-        return []
+        return None
 
 
 def main(args=None):

@@ -1,0 +1,15 @@
+path: C:/Nxp_Cup_India/Sign_Board_Detection_Data_Set__NXP_CUP_INDIA_2026/NXPCUP_2026.v2-v1_a.yolov11/NXPCUP_2026.v2-v1_a.yolov11
+train: train/images
+val: valid/images
+test: test/images
+nc: 9
+names:
+  0: A
+  1: B
+  2: C
+  3: Left
+  4: Right
+  5: Straight
+  6: X
+  7: Y
+  8: Z

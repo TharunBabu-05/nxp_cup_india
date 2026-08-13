@@ -271,7 +271,6 @@ class LineFollower(Node):
                 self._assigned_hospital = None
                 self._seen_hosp_qr      = None
                 self._ack(msg.uid)
-                self._wait_next_retry = 0
                 self._patients_done += 1
                 self.get_logger().info(
                     f'[SERVER] Next patient: {payload} '
@@ -526,8 +525,8 @@ class LineFollower(Node):
                 self.get_logger().warn('[SERVER] Timeout — resending patient')
                 self._send_server(self._current_patient)
             
-            # Fallback to nearest hospital if server never replies (give it 15s)
-            if getattr(self, '_wait_hosp_start', 0) > 0 and now - self._wait_hosp_start > 15.0:
+            # Fallback to nearest hospital if server never replies
+            if getattr(self, '_wait_hosp_start', 0) > 0 and now - self._wait_hosp_start > 5.0:
                 self.get_logger().warn('[FSM] Server timeout! Going to nearest HOSPITAL.')
                 self._assigned_hospital = 'HOSPITAL'
                 self._set_state(S.SEEK_HOSPITAL)

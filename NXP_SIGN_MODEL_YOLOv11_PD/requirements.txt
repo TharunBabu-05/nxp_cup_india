@@ -1,0 +1,11 @@
+torch==2.3.0
+torchvision==0.18.0
+numpy==1.26.4
+opencv-python==4.11.0.86
+scipy==1.15.1
+scikit-learn==1.5.2
+tk==0.1.0
+pyzbar==0.1.9
+matplotlib==3.5.1
+pyyaml==6.0.2
+tflite-runtime==2.14.0
