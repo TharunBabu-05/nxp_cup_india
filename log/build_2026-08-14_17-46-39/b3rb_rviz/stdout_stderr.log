@@ -1,0 +1,29 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tharun/cognipilot/cranium/build/b3rb_rviz
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/rviz/nav2/robot.rviz
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/launch/view_robot.launch.py
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/ament_index/resource_index/package_run_dependencies/b3rb_rviz
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/ament_index/resource_index/parent_prefix_path/b3rb_rviz
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/ament_prefix_path.sh
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/ament_prefix_path.dsv
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/path.sh
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/environment/path.dsv
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.bash
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.sh
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.zsh
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/local_setup.dsv
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/package.dsv
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/ament_index/resource_index/packages/b3rb_rviz
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/cmake/b3rb_rvizConfig.cmake
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/cmake/b3rb_rvizConfig-version.cmake
+-- Symlinking: /home/tharun/cognipilot/cranium/install/b3rb_rviz/share/b3rb_rviz/package.xml

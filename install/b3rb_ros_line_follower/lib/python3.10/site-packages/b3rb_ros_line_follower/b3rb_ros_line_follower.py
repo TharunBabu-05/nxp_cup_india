@@ -29,10 +29,11 @@ MAX_STEER      = 0.80
 STEER_ALPHA    = 0.30    # low-pass coefficient
 
 # LiDAR
-LIDAR_STOP_DIST  = 0.22   # emergency stop - very close (was 0.35, too sensitive)
-LIDAR_SLOW_DIST  = 0.55   # start slowing down
-LIDAR_FRONT_HALF = 20    # ±deg around front (narrower = less false triggers on walls)
-LIDAR_SIDE_DEG   = 15    # side sector deg
+LIDAR_STOP_DIST       = 0.22   # emergency stop - very close
+LIDAR_SLOW_DIST       = 0.40   # obstacle detection threshold (was 0.55, too sensitive for track curves)
+LIDAR_FRONT_HALF      = 15    # ±deg around front (narrower = fewer false triggers on walls)
+LIDAR_SIDE_DEG        = 15    # side sector deg
+OBSTACLE_PERSIST_CNT  = 3     # consecutive LiDAR ticks before triggering avoidance (filters track-wall noise)
 
 # Timings
 STARTUP_GRACE_S    = 2.5
@@ -110,9 +111,10 @@ class LineFollower(Node):
         self._steer_cmd  = 0.0
 
         # LiDAR
-        self._front_dist = 99.0
-        self._left_dist  = 99.0
-        self._right_dist = 99.0
+        self._front_dist  = 99.0
+        self._left_dist   = 99.0
+        self._right_dist  = 99.0
+        self._obstacle_cnt = 0   # consecutive frames seeing an obstacle (filters false positives)
 
         # Sign buffer (for confirmation)
         self._sign_buf_dest  = ''
@@ -404,15 +406,34 @@ class LineFollower(Node):
     #  OBSTACLE CHECK
     # ──────────────────────────────────────────────────────────────
     def _obstacle_check(self, current_state):
-        """Returns True if we triggered avoidance."""
+        """Returns True if we triggered avoidance.
+        Requires OBSTACLE_PERSIST_CNT consecutive LiDAR ticks in the danger zone
+        to filter out track wall / curve false-positives.
+        """
         if self._front_dist > LIDAR_SLOW_DIST:
+            self._obstacle_cnt = 0   # clear — no obstacle right now
             return False
+
+        # Count consecutive ticks inside the danger zone
+        self._obstacle_cnt += 1
+
         if self._front_dist < LIDAR_STOP_DIST:
+            # Emergency: hard stop immediately, no need to wait
+            self._obstacle_cnt = 0
             self._drive(SPEED_STOP, 0.0)
             self.get_logger().warn(
                 f'[OBSTACLE] STOP front={self._front_dist:.2f}m')
             return True
-        # Choose avoidance direction
+
+        # For slow-zone: only commit to avoidance after N consecutive readings
+        if self._obstacle_cnt < OBSTACLE_PERSIST_CNT:
+            self.get_logger().info(
+                f'[OBSTACLE] Pending ({self._obstacle_cnt}/{OBSTACLE_PERSIST_CNT}) '
+                f'front={self._front_dist:.2f}m')
+            return False
+
+        # Persistent obstacle confirmed — commit to avoidance
+        self._obstacle_cnt = 0
         avoid = TURN_STEER_VAL if self._left_dist > self._right_dist else -TURN_STEER_VAL
         self._avoid_steer     = avoid
         self._avoid_end_t     = time.time() + AVOIDANCE_S

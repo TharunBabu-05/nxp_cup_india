@@ -1,0 +1,328 @@
+[0.033s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble /usr/bin/cmake --build /home/tharun/cognipilot/cranium/build/synapse_msgs -- -j12 -l12
+[0.060s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.188s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.193s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.196s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.271s] -- Found std_msgs: 4.9.2 (/opt/ros/humble/share/std_msgs/cmake)
+[0.303s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.571s] -- Found ament_cmake_cppcheck: 0.12.15 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.571s] -- Found ament_cmake_cpplint: 0.12.15 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.572s] -- Found ament_cmake_uncrustify: 0.12.15 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.572s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.773s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.025s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.046s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.071s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.072s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.072s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.103s] -- Found ament_cmake_flake8: 0.12.15 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.103s] -- Found ament_cmake_pep257: 0.12.15 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.180s] -- Configuring done
+[1.207s] -- Generating done
+[1.216s] -- Build files have been written to: /home/tharun/cognipilot/cranium/build/synapse_msgs
+[1.246s] [  1%] Built target synapse_msgs__rs
+[1.287s] [  1%] Built target ament_cmake_python_copy_synapse_msgs
+[1.325s] [  3%] Built target synapse_msgs__cpp
+[1.502s] running egg_info
+[1.502s] writing synapse_msgs.egg-info/PKG-INFO
+[1.503s] writing dependency_links to synapse_msgs.egg-info/dependency_links.txt
+[1.503s] writing top-level names to synapse_msgs.egg-info/top_level.txt
+[1.504s] reading manifest file 'synapse_msgs.egg-info/SOURCES.txt'
+[1.505s] writing manifest file 'synapse_msgs.egg-info/SOURCES.txt'
+[1.525s] [  3%] Built target ament_cmake_python_build_synapse_msgs_egg
+[1.534s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_cpp[0m
+[1.549s] [ 14%] Built target synapse_msgs__rosidl_typesupport_cpp
+[1.564s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_introspection_cpp[0m
+[1.585s] [ 25%] Built target synapse_msgs__rosidl_typesupport_introspection_cpp
+[1.601s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[1.622s] [ 26%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/synapse_msgs/msg/detail/dds_fastrtps/bezier_curve__type_support.cpp.o[0m
+[1.898s] [ 28%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/synapse_msgs/msg/detail/dds_fastrtps/server_communication__type_support.cpp.o[0m
+[2.128s] [ 29%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/synapse_msgs/msg/detail/dds_fastrtps/edge_vectors__type_support.cpp.o[0m
+[2.374s] [ 31%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/synapse_msgs/msg/detail/dds_fastrtps/status__type_support.cpp.o[0m
+[2.620s] [ 32%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/synapse_msgs/msg/detail/dds_fastrtps/bezier_trajectory__type_support.cpp.o[0m
+[2.901s] [ 34%] [32m[1mLinking CXX shared library libsynapse_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.967s] [ 35%] Built target synapse_msgs__rosidl_typesupport_fastrtps_cpp
+[2.977s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_generator_c[0m
+[2.993s] [ 37%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_c.dir/rosidl_generator_c/synapse_msgs/msg/detail/bezier_curve__functions.c.o[0m
+[3.035s] [ 39%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_c.dir/rosidl_generator_c/synapse_msgs/msg/detail/server_communication__functions.c.o[0m
+[3.072s] [ 40%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_c.dir/rosidl_generator_c/synapse_msgs/msg/detail/edge_vectors__functions.c.o[0m
+[3.119s] [ 42%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_c.dir/rosidl_generator_c/synapse_msgs/msg/detail/status__functions.c.o[0m
+[3.169s] [ 43%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_c.dir/rosidl_generator_c/synapse_msgs/msg/detail/bezier_trajectory__functions.c.o[0m
+[3.215s] [ 45%] [32m[1mLinking C shared library libsynapse_msgs__rosidl_generator_c.so[0m
+[3.256s] [ 46%] Built target synapse_msgs__rosidl_generator_c
+[3.268s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_fastrtps_c[0m
+[3.285s] [ 48%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/synapse_msgs/msg/detail/bezier_curve__type_support_c.cpp.o[0m
+[3.492s] [ 50%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/synapse_msgs/msg/detail/server_communication__type_support_c.cpp.o[0m
+[3.690s] [ 51%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/synapse_msgs/msg/detail/edge_vectors__type_support_c.cpp.o[0m
+[3.891s] [ 53%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/synapse_msgs/msg/detail/status__type_support_c.cpp.o[0m
+[4.098s] [ 54%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/synapse_msgs/msg/detail/bezier_trajectory__type_support_c.cpp.o[0m
+[4.304s] [ 56%] [32m[1mLinking CXX shared library libsynapse_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.368s] [ 57%] Built target synapse_msgs__rosidl_typesupport_fastrtps_c
+[4.377s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_c[0m
+[4.388s] [ 59%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/synapse_msgs/msg/bezier_curve__type_support.cpp.o[0m
+[4.420s] [ 60%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/synapse_msgs/msg/server_communication__type_support.cpp.o[0m
+[4.457s] [ 62%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/synapse_msgs/msg/edge_vectors__type_support.cpp.o[0m
+[4.492s] [ 64%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/synapse_msgs/msg/status__type_support.cpp.o[0m
+[4.529s] [ 65%] [32mBuilding CXX object CMakeFiles/synapse_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/synapse_msgs/msg/bezier_trajectory__type_support.cpp.o[0m
+[4.566s] [ 67%] [32m[1mLinking CXX shared library libsynapse_msgs__rosidl_typesupport_c.so[0m
+[4.614s] [ 68%] Built target synapse_msgs__rosidl_typesupport_c
+[4.624s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_introspection_c[0m
+[4.637s] [ 70%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/synapse_msgs/msg/detail/bezier_curve__type_support.c.o[0m
+[4.675s] [ 71%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/synapse_msgs/msg/detail/server_communication__type_support.c.o[0m
+[4.710s] [ 73%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/synapse_msgs/msg/detail/edge_vectors__type_support.c.o[0m
+[4.750s] [ 75%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/synapse_msgs/msg/detail/status__type_support.c.o[0m
+[4.788s] [ 76%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/synapse_msgs/msg/detail/bezier_trajectory__type_support.c.o[0m
+[4.826s] [ 78%] [32m[1mLinking C shared library libsynapse_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.872s] [ 79%] Built target synapse_msgs__rosidl_typesupport_introspection_c
+[4.903s] [ 79%] Built target synapse_msgs
+[4.935s] [ 81%] Built target synapse_msgs__py
+[4.953s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_generator_py[0m
+[4.975s] [ 82%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_py.dir/rosidl_generator_py/synapse_msgs/msg/_bezier_curve_s.c.o[0m
+[5.061s] [ 84%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_py.dir/rosidl_generator_py/synapse_msgs/msg/_server_communication_s.c.o[0m
+[5.134s] [ 85%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_py.dir/rosidl_generator_py/synapse_msgs/msg/_edge_vectors_s.c.o[0m
+[5.208s] [ 87%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_py.dir/rosidl_generator_py/synapse_msgs/msg/_status_s.c.o[0m
+[5.287s] [ 89%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_generator_py.dir/rosidl_generator_py/synapse_msgs/msg/_bezier_trajectory_s.c.o[0m
+[5.357s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/synapse_msgs/libsynapse_msgs__rosidl_generator_py.so[0m
+[5.401s] [ 90%] Built target synapse_msgs__rosidl_generator_py
+[5.413s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[5.430s] [ 92%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/synapse_msgs/_synapse_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.506s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/synapse_msgs/synapse_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.543s] [ 93%] Built target synapse_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.557s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_c__pyext[0m
+[5.576s] [ 95%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/synapse_msgs/_synapse_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.657s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/synapse_msgs/synapse_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.692s] [ 96%] Built target synapse_msgs__rosidl_typesupport_c__pyext
+[5.704s] [35m[1mConsolidate compiler generated dependencies of target synapse_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[5.722s] [ 98%] [32mBuilding C object CMakeFiles/synapse_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/synapse_msgs/_synapse_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.804s] [100%] [32m[1mLinking C shared library rosidl_generator_py/synapse_msgs/synapse_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.841s] [100%] Built target synapse_msgs__rosidl_typesupport_introspection_c__pyext
+[5.858s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble /usr/bin/cmake --build /home/tharun/cognipilot/cranium/build/synapse_msgs -- -j12 -l12
+[5.861s] Invoking command in '/home/tharun/cognipilot/cranium/build/synapse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble /usr/bin/cmake --install /home/tharun/cognipilot/cranium/build/synapse_msgs
+[5.873s] -- Install configuration: ""
+[5.873s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/ament_index/resource_index/rosidl_interfaces/synapse_msgs
+[5.874s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs
+[5.874s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/edge_vectors.h
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/bezier_curve.h
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/bezier_trajectory.h
+[5.874s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/server_communication.h
+[5.874s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__type_support.h
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__struct.h
+[5.874s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__functions.h
+[5.875s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__type_support.h
+[5.875s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__functions.c
+[5.875s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__functions.h
+[5.876s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__type_support.h
+[5.876s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__struct.h
+[5.876s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__functions.h
+[5.876s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__struct.h
+[5.876s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__functions.h
+[5.876s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__functions.c
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__functions.c
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__struct.h
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__type_support.h
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__struct.h
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__functions.c
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__functions.c
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__type_support.h
+[5.877s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__functions.h
+[5.878s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/status.h
+[5.878s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/library_path.sh
+[5.878s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/library_path.dsv
+[5.878s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_generator_c.so
+[5.879s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_generator_c.so" to ""
+[5.879s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs
+[5.879s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg
+[5.879s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.879s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail
+[5.879s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__rosidl_typesupport_fastrtps_c.h
+[5.879s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h
+[5.879s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__rosidl_typesupport_fastrtps_c.h
+[5.879s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__rosidl_typesupport_fastrtps_c.h
+[5.879s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__rosidl_typesupport_fastrtps_c.h
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_fastrtps_c.so
+[5.880s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.880s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs
+[5.880s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg
+[5.880s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.880s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__type_support.c
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__type_support.c
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__type_support.c
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__rosidl_typesupport_introspection_c.h
+[5.880s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__rosidl_typesupport_introspection_c.h
+[5.881s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__rosidl_typesupport_introspection_c.h
+[5.881s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__rosidl_typesupport_introspection_c.h
+[5.881s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__type_support.c
+[5.881s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__type_support.c
+[5.881s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_introspection_c.so
+[5.881s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.881s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_c.so
+[5.882s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_c.so" to ""
+[5.882s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs
+[5.882s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/bezier_trajectory.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/bezier_curve.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/status.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/edge_vectors.hpp
+[5.882s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.882s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__struct.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__traits.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__builder.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__type_support.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__struct.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__traits.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__type_support.hpp
+[5.882s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__struct.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__struct.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__traits.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__type_support.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__builder.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__struct.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__builder.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__builder.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__type_support.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__type_support.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__builder.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__traits.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__traits.hpp
+[5.883s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/server_communication.hpp
+[5.883s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs
+[5.883s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg
+[5.884s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.884s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__rosidl_typesupport_fastrtps_cpp.hpp
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__rosidl_typesupport_fastrtps_cpp.hpp
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__rosidl_typesupport_fastrtps_cpp.hpp
+[5.884s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/dds_fastrtps
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.884s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.884s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs
+[5.884s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg
+[5.884s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__type_support.cpp
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__type_support.cpp
+[5.884s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/status__type_support.cpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__type_support.cpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__type_support.cpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/server_communication__rosidl_typesupport_introspection_cpp.hpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/edge_vectors__rosidl_typesupport_introspection_cpp.hpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/include/synapse_msgs/synapse_msgs/msg/detail/bezier_curve__rosidl_typesupport_introspection_cpp.hpp
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_introspection_cpp.so
+[5.885s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.885s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_cpp.so
+[5.885s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_typesupport_cpp.so" to ""
+[5.885s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/pythonpath.sh
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/pythonpath.dsv
+[5.886s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs-0.0.1-py3.10.egg-info
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs-0.0.1-py3.10.egg-info/dependency_links.txt
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs-0.0.1-py3.10.egg-info/SOURCES.txt
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs-0.0.1-py3.10.egg-info/top_level.txt
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs-0.0.1-py3.10.egg-info/PKG-INFO
+[5.886s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/libsynapse_msgs__rosidl_generator_py.so
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/_synapse_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.886s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_bezier_trajectory.py
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_status.py
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_bezier_trajectory_s.c
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_edge_vectors.py
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/__init__.py
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_server_communication_s.c
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_bezier_curve.py
+[5.886s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_server_communication.py
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_edge_vectors_s.c
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_status_s.c
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_bezier_curve_s.c
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/__init__.py
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/_synapse_msgs_s.ep.rosidl_typesupport_c.c
+[5.887s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/_synapse_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.916s] Listing '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/__init__.py'...
+[5.916s] Listing '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/__init__.py'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_bezier_curve.py'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_bezier_trajectory.py'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_edge_vectors.py'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_server_communication.py'...
+[5.916s] Compiling '/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/msg/_status.py'...
+[5.919s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.919s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.919s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.919s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.919s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.920s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/local/lib/python3.10/dist-packages/synapse_msgs/synapse_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_generator_py.so
+[5.920s] -- Set runtime path of "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib/libsynapse_msgs__rosidl_generator_py.so" to ""
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/ament_index/resource_index/rust_packages/synapse_msgs
+[5.920s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/build.rs
+[5.920s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/src
+[5.920s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/src/msg
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/src/msg/rmw.rs
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/src/msg.rs
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/src/lib.rs
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/rust/Cargo.toml
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/BezierCurve.idl
+[5.920s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/BezierTrajectory.idl
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/Status.idl
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/EdgeVectors.idl
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/ServerCommunication.idl
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/BezierCurve.msg
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/BezierTrajectory.msg
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/Status.msg
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/EdgeVectors.msg
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/msg/ServerCommunication.msg
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/ament_index/resource_index/package_run_dependencies/synapse_msgs
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/ament_index/resource_index/parent_prefix_path/synapse_msgs
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/ament_prefix_path.sh
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/ament_prefix_path.dsv
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/path.sh
+[5.921s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/environment/path.dsv
+[5.921s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/local_setup.bash
+[5.921s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/local_setup.sh
+[5.921s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/local_setup.zsh
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/local_setup.dsv
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/package.dsv
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/ament_index/resource_index/packages/synapse_msgs
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_generator_cExport.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_cExport.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_generator_cppExport.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.922s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_cppExport.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_generator_pyExport.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/export_synapse_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/rosidl_cmake-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgsConfig.cmake
+[5.923s] -- Up-to-date: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/cmake/synapse_msgsConfig-version.cmake
+[5.923s] -- Installing: /home/tharun/cognipilot/cranium/install/synapse_msgs/share/synapse_msgs/package.xml
+[5.925s] Invoked command in '/home/tharun/cognipilot/cranium/build/synapse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tharun/cognipilot/cranium/install/b3rb_ros_line_follower:/opt/ros/humble /usr/bin/cmake --install /home/tharun/cognipilot/cranium/build/synapse_msgs
