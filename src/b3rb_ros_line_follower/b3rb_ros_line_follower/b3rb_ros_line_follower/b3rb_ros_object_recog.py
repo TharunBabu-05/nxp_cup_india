@@ -53,24 +53,14 @@ DIRECTION_MAP = {
 }
 
 # ── New model path ────────────────────────────────────────────────
-NEW_MODEL_PATH = os.path.join(
-    os.path.expanduser('~'),
-    'cognipilot', 'cranium',
-    'created_model_NXPCUP_2026.v2-v1_yolov8',
-    'content', 'NXPCUP_2026.v2-v1_a.yolov8',
-    'new', 'best.onnx')
+NEW_MODEL_PATH = os.path.expanduser('~/cognipilot/cranium/YOLOv11_PD/model/best.tflite')
 
-FALLBACK_MODEL_PATH = os.path.join(
-    os.path.expanduser('~'),
-    'cognipilot', 'cranium',
-    'created_model_NXPCUP_2026.v2-v1_yolov8',
-    'content', 'NXPCUP_2026.v2-v1_a.yolov8',
-    'models', 'best.pt')
+FALLBACK_MODEL_PATH = os.path.expanduser('~/cognipilot/cranium/created_model_NXPCUP_2026.v2-v1_yolov8/content/NXPCUP_2026.v2-v1_a.yolov8/models/best.pt')
 
 
 class ObjectRecognizer(Node):
     """
-    ROS 2 Node that classifies traffic sign boards using the new ONNX YOLOv8 model.
+    ROS 2 Node that classifies traffic sign boards using the new ONNX/TFLite YOLOv11 model.
 
     Sign-lock behaviour
     ───────────────────
@@ -113,11 +103,11 @@ class ObjectRecognizer(Node):
         self._lock_start_t: float = 0.0      # when the lock was acquired
         self._last_lock_publish_t: float = 0.0
 
-        self.get_logger().info('[DETECT] Object Recognizer ready (new ONNX model, sign-lock).')
+        self.get_logger().info('[DETECT] Object Recognizer ready (new TFLite model, sign-lock).')
 
     # ── model loading ─────────────────────────────────────────────
     def _load_model(self):
-        """Load the new ONNX model, fall back to old .pt if unavailable."""
+        """Load the new TFLite model, fall back to old .pt if unavailable."""
         if not YOLO_AVAILABLE:
             self.get_logger().warn('[DETECT] ultralytics not installed; sign detection disabled.')
             return
@@ -192,12 +182,9 @@ class ObjectRecognizer(Node):
     # ── YOLOv8 inference ─────────────────────────────────────────
     def _classify(self, image):
         """
-        Run YOLOv8 inference on a single frame.
-        Returns a string like "HOSPITAL_2:LEFT" or None.
-
-        This method does NOT use any time-based carry-over cache — it looks
-        ONLY at what is visible right now.  Dest + Dir must both appear in
-        the same frame for a result to be returned.
+        Run YOLO inference on a single frame.
+        Finds the highest confidence destination (alphabet), and pairs it with
+        the direction box (arrow) that is most horizontally aligned (one below other).
         """
         if self.model is None:
             return None
@@ -211,8 +198,8 @@ class ObjectRecognizer(Node):
             if boxes is None or len(boxes) == 0:
                 return None
 
-            destination_hits = []  # (conf, label_str)
-            direction_hits   = []  # (conf, label_str)
+            destination_hits = []  # (conf, label_str, x_center, y_center)
+            direction_hits   = []  # (conf, label_str, x_center, y_center)
 
             for box in boxes:
                 cls_id = int(box.cls[0].item())
@@ -221,21 +208,34 @@ class ObjectRecognizer(Node):
                     continue
                 label = CLASS_NAMES[cls_id]
 
-                if label in DESTINATION_MAP:
-                    destination_hits.append((conf, DESTINATION_MAP[label]))
-                elif label in DIRECTION_MAP:
-                    direction_hits.append((conf, DIRECTION_MAP[label]))
+                x1, y1, x2, y2 = box.xyxy[0].tolist()
+                x_center = (x1 + x2) / 2.0
+                y_center = (y1 + y2) / 2.0
 
-            # Both destination AND direction must be detected in the same frame
-            if destination_hits and direction_hits:
-                best_dest = max(destination_hits, key=lambda x: x[0])[1]
-                best_dir  = max(direction_hits,   key=lambda x: x[0])[1]
+                if label in DESTINATION_MAP:
+                    destination_hits.append((conf, DESTINATION_MAP[label], x_center, y_center))
+                elif label in DIRECTION_MAP:
+                    direction_hits.append((conf, DIRECTION_MAP[label], x_center, y_center))
+
+            if destination_hits:
+                # 1. Pick the destination with the highest confidence
+                best_dest_hit = max(destination_hits, key=lambda x: x[0])
+                best_dest = best_dest_hit[1]
+                dest_x_center = best_dest_hit[2]
+
+                # 2. Pair it with the direction box that is most horizontally aligned
+                # i.e., "one below other" -> smallest absolute difference in x_center
+                best_dir = 'STRAIGHT'  # default if no arrow found
+                if direction_hits:
+                    aligned_dirs = sorted(direction_hits, key=lambda d: abs(d[2] - dest_x_center))
+                    best_dir = aligned_dirs[0][1]
+
                 return f'{best_dest}:{best_dir}'
 
-            # Destination only → default to STRAIGHT (don't turn)
-            if destination_hits:
-                best_dest = max(destination_hits, key=lambda x: x[0])[1]
-                return f'{best_dest}:STRAIGHT'
+            elif direction_hits:
+                # Only arrow found, no alphabet
+                best_dir = max(direction_hits, key=lambda x: x[0])[1]
+                return f'UNKNOWN:{best_dir}'
 
         except Exception as e:
             self.get_logger().debug(f'[DETECT] Inference error: {e}')
