@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/synapse_protobuf
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/synapse_protobuf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/synapse_protobuf
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/synapse_protobuf
 
 # Include any dependencies generated for this target.
 include proto/CMakeFiles/synapse_protobuf.dir/depend.make
@@ -69,226 +69,226 @@ include proto/CMakeFiles/synapse_protobuf.dir/progress.make
 # Include the compile flags for this target's objects.
 include proto/CMakeFiles/synapse_protobuf.dir/flags.make
 
-proto/actuators.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/actuators.proto
+proto/actuators.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/actuators.proto
 proto/actuators.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on actuators.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/actuators.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on actuators.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/actuators.proto
 
 proto/actuators.pb.cc: proto/actuators.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/actuators.pb.cc
 
-proto/altimeter.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/altimeter.proto
+proto/altimeter.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/altimeter.proto
 proto/altimeter.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on altimeter.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/altimeter.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on altimeter.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/altimeter.proto
 
 proto/altimeter.pb.cc: proto/altimeter.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/altimeter.pb.cc
 
-proto/battery_state.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/battery_state.proto
+proto/battery_state.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/battery_state.proto
 proto/battery_state.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on battery_state.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/battery_state.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on battery_state.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/battery_state.proto
 
 proto/battery_state.pb.cc: proto/battery_state.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/battery_state.pb.cc
 
-proto/bezier_curve.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/bezier_curve.proto
+proto/bezier_curve.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/bezier_curve.proto
 proto/bezier_curve.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on bezier_curve.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/bezier_curve.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on bezier_curve.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/bezier_curve.proto
 
 proto/bezier_curve.pb.cc: proto/bezier_curve.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/bezier_curve.pb.cc
 
-proto/bezier_trajectory.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/bezier_trajectory.proto
+proto/bezier_trajectory.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/bezier_trajectory.proto
 proto/bezier_trajectory.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Running cpp protocol buffer compiler on bezier_trajectory.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/bezier_trajectory.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Running cpp protocol buffer compiler on bezier_trajectory.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/bezier_trajectory.proto
 
 proto/bezier_trajectory.pb.cc: proto/bezier_trajectory.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/bezier_trajectory.pb.cc
 
-proto/can.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/can.proto
+proto/can.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/can.proto
 proto/can.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running cpp protocol buffer compiler on can.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/can.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running cpp protocol buffer compiler on can.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/can.proto
 
 proto/can.pb.cc: proto/can.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/can.pb.cc
 
-proto/header.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/header.proto
+proto/header.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/header.proto
 proto/header.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running cpp protocol buffer compiler on header.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/header.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Running cpp protocol buffer compiler on header.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/header.proto
 
 proto/header.pb.cc: proto/header.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/header.pb.cc
 
-proto/imu.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/imu.proto
+proto/imu.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/imu.proto
 proto/imu.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running cpp protocol buffer compiler on imu.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/imu.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Running cpp protocol buffer compiler on imu.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/imu.proto
 
 proto/imu.pb.cc: proto/imu.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/imu.pb.cc
 
-proto/joy.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/joy.proto
+proto/joy.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/joy.proto
 proto/joy.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running cpp protocol buffer compiler on joy.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/joy.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Running cpp protocol buffer compiler on joy.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/joy.proto
 
 proto/joy.pb.cc: proto/joy.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/joy.pb.cc
 
-proto/led.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/led.proto
+proto/led.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/led.proto
 proto/led.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running cpp protocol buffer compiler on led.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/led.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Running cpp protocol buffer compiler on led.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/led.proto
 
 proto/led.pb.cc: proto/led.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/led.pb.cc
 
-proto/led_array.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/led_array.proto
+proto/led_array.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/led_array.proto
 proto/led_array.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running cpp protocol buffer compiler on led_array.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/led_array.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Running cpp protocol buffer compiler on led_array.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/led_array.proto
 
 proto/led_array.pb.cc: proto/led_array.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/led_array.pb.cc
 
-proto/magnetic_field.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/magnetic_field.proto
+proto/magnetic_field.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/magnetic_field.proto
 proto/magnetic_field.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running cpp protocol buffer compiler on magnetic_field.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/magnetic_field.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Running cpp protocol buffer compiler on magnetic_field.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/magnetic_field.proto
 
 proto/magnetic_field.pb.cc: proto/magnetic_field.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/magnetic_field.pb.cc
 
-proto/nav_sat_fix.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_fix.proto
+proto/nav_sat_fix.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_fix.proto
 proto/nav_sat_fix.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running cpp protocol buffer compiler on nav_sat_fix.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_fix.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Running cpp protocol buffer compiler on nav_sat_fix.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_fix.proto
 
 proto/nav_sat_fix.pb.cc: proto/nav_sat_fix.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/nav_sat_fix.pb.cc
 
-proto/nav_sat_status.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_status.proto
+proto/nav_sat_status.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_status.proto
 proto/nav_sat_status.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running cpp protocol buffer compiler on nav_sat_status.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_status.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Running cpp protocol buffer compiler on nav_sat_status.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/nav_sat_status.proto
 
 proto/nav_sat_status.pb.cc: proto/nav_sat_status.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/nav_sat_status.pb.cc
 
-proto/odometry.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/odometry.proto
+proto/odometry.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/odometry.proto
 proto/odometry.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Running cpp protocol buffer compiler on odometry.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/odometry.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Running cpp protocol buffer compiler on odometry.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/odometry.proto
 
 proto/odometry.pb.cc: proto/odometry.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/odometry.pb.cc
 
-proto/pixy_vector.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/pixy_vector.proto
+proto/pixy_vector.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/pixy_vector.proto
 proto/pixy_vector.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Running cpp protocol buffer compiler on pixy_vector.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/pixy_vector.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Running cpp protocol buffer compiler on pixy_vector.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/pixy_vector.proto
 
 proto/pixy_vector.pb.cc: proto/pixy_vector.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/pixy_vector.pb.cc
 
-proto/point.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/point.proto
+proto/point.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/point.proto
 proto/point.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Running cpp protocol buffer compiler on point.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/point.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Running cpp protocol buffer compiler on point.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/point.proto
 
 proto/point.pb.cc: proto/point.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/point.pb.cc
 
-proto/pose.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/pose.proto
+proto/pose.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/pose.proto
 proto/pose.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Running cpp protocol buffer compiler on pose.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/pose.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Running cpp protocol buffer compiler on pose.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/pose.proto
 
 proto/pose.pb.cc: proto/pose.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/pose.pb.cc
 
-proto/pose_with_covariance.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/pose_with_covariance.proto
+proto/pose_with_covariance.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/pose_with_covariance.proto
 proto/pose_with_covariance.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Running cpp protocol buffer compiler on pose_with_covariance.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/pose_with_covariance.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Running cpp protocol buffer compiler on pose_with_covariance.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/pose_with_covariance.proto
 
 proto/pose_with_covariance.pb.cc: proto/pose_with_covariance.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/pose_with_covariance.pb.cc
 
-proto/quaternion.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/quaternion.proto
+proto/quaternion.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/quaternion.proto
 proto/quaternion.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Running cpp protocol buffer compiler on quaternion.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/quaternion.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Running cpp protocol buffer compiler on quaternion.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/quaternion.proto
 
 proto/quaternion.pb.cc: proto/quaternion.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/quaternion.pb.cc
 
-proto/safety.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/safety.proto
+proto/safety.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/safety.proto
 proto/safety.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Running cpp protocol buffer compiler on safety.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/safety.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Running cpp protocol buffer compiler on safety.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/safety.proto
 
 proto/safety.pb.cc: proto/safety.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/safety.pb.cc
 
-proto/sim_clock.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/sim_clock.proto
+proto/sim_clock.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/sim_clock.proto
 proto/sim_clock.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Running cpp protocol buffer compiler on sim_clock.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/sim_clock.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Running cpp protocol buffer compiler on sim_clock.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/sim_clock.proto
 
 proto/sim_clock.pb.cc: proto/sim_clock.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/sim_clock.pb.cc
 
-proto/status.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/status.proto
+proto/status.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/status.proto
 proto/status.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Running cpp protocol buffer compiler on status.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/status.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Running cpp protocol buffer compiler on status.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/status.proto
 
 proto/status.pb.cc: proto/status.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/status.pb.cc
 
-proto/time.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/time.proto
+proto/time.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/time.proto
 proto/time.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Running cpp protocol buffer compiler on time.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/time.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Running cpp protocol buffer compiler on time.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/time.proto
 
 proto/time.pb.cc: proto/time.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/time.pb.cc
 
-proto/twist.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/twist.proto
+proto/twist.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/twist.proto
 proto/twist.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Running cpp protocol buffer compiler on twist.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/twist.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Running cpp protocol buffer compiler on twist.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/twist.proto
 
 proto/twist.pb.cc: proto/twist.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/twist.pb.cc
 
-proto/twist_with_covariance.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/twist_with_covariance.proto
+proto/twist_with_covariance.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/twist_with_covariance.proto
 proto/twist_with_covariance.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Running cpp protocol buffer compiler on twist_with_covariance.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/twist_with_covariance.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Running cpp protocol buffer compiler on twist_with_covariance.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/twist_with_covariance.proto
 
 proto/twist_with_covariance.pb.cc: proto/twist_with_covariance.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/twist_with_covariance.pb.cc
 
-proto/vector3.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/vector3.proto
+proto/vector3.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/vector3.proto
 proto/vector3.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Running cpp protocol buffer compiler on vector3.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/vector3.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Running cpp protocol buffer compiler on vector3.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/vector3.proto
 
 proto/vector3.pb.cc: proto/vector3.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/vector3.pb.cc
 
-proto/wheel_odometry.pb.h: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/wheel_odometry.proto
+proto/wheel_odometry.pb.h: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/wheel_odometry.proto
 proto/wheel_odometry.pb.h: /usr/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Running cpp protocol buffer compiler on wheel_odometry.proto"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto -I /home/tharun/cognipilot/cranium/src /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto/wheel_odometry.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Running cpp protocol buffer compiler on wheel_odometry.proto"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/protoc --cpp_out /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto -I /home/sanjay/cognipilot/cranium/src /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto/wheel_odometry.proto
 
 proto/wheel_odometry.pb.cc: proto/wheel_odometry.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate proto/wheel_odometry.pb.cc
@@ -296,394 +296,394 @@ proto/wheel_odometry.pb.cc: proto/wheel_odometry.pb.h
 proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o: proto/actuators.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.cc > CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.cc > CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.cc -o CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.cc -o CMakeFiles/synapse_protobuf.dir/actuators.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o: proto/altimeter.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.cc > CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.cc > CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.cc -o CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.cc -o CMakeFiles/synapse_protobuf.dir/altimeter.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o: proto/battery_state.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.cc > CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.cc > CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.cc -o CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.cc -o CMakeFiles/synapse_protobuf.dir/battery_state.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o: proto/bezier_curve.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.cc > CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.cc > CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.cc -o CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.cc -o CMakeFiles/synapse_protobuf.dir/bezier_curve.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o: proto/bezier_trajectory.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.cc > CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.cc > CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.cc -o CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.cc -o CMakeFiles/synapse_protobuf.dir/bezier_trajectory.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o: proto/can.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/can.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/can.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/can.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/can.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/can.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.cc > CMakeFiles/synapse_protobuf.dir/can.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.cc > CMakeFiles/synapse_protobuf.dir/can.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/can.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/can.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.cc -o CMakeFiles/synapse_protobuf.dir/can.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.cc -o CMakeFiles/synapse_protobuf.dir/can.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o: proto/header.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/header.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/header.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/header.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/header.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/header.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.cc > CMakeFiles/synapse_protobuf.dir/header.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.cc > CMakeFiles/synapse_protobuf.dir/header.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/header.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/header.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.cc -o CMakeFiles/synapse_protobuf.dir/header.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.cc -o CMakeFiles/synapse_protobuf.dir/header.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o: proto/imu.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/imu.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/imu.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.cc > CMakeFiles/synapse_protobuf.dir/imu.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.cc > CMakeFiles/synapse_protobuf.dir/imu.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/imu.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/imu.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.cc -o CMakeFiles/synapse_protobuf.dir/imu.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.cc -o CMakeFiles/synapse_protobuf.dir/imu.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o: proto/joy.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/joy.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc > CMakeFiles/synapse_protobuf.dir/joy.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc > CMakeFiles/synapse_protobuf.dir/joy.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/joy.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc -o CMakeFiles/synapse_protobuf.dir/joy.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc -o CMakeFiles/synapse_protobuf.dir/joy.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o: proto/led.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/led.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/led.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/led.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/led.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/led.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.cc > CMakeFiles/synapse_protobuf.dir/led.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.cc > CMakeFiles/synapse_protobuf.dir/led.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/led.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/led.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.cc -o CMakeFiles/synapse_protobuf.dir/led.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.cc -o CMakeFiles/synapse_protobuf.dir/led.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o: proto/led_array.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc > CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc > CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc -o CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc -o CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o: proto/magnetic_field.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.cc > CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.cc > CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.cc -o CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.cc -o CMakeFiles/synapse_protobuf.dir/magnetic_field.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o: proto/nav_sat_fix.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.cc > CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.cc > CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.cc -o CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.cc -o CMakeFiles/synapse_protobuf.dir/nav_sat_fix.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o: proto/nav_sat_status.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.cc > CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.cc > CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.cc -o CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.cc -o CMakeFiles/synapse_protobuf.dir/nav_sat_status.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o: proto/odometry.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.cc > CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.cc > CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.cc -o CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.cc -o CMakeFiles/synapse_protobuf.dir/odometry.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o: proto/pixy_vector.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.cc > CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.cc > CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.cc -o CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.cc -o CMakeFiles/synapse_protobuf.dir/pixy_vector.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o: proto/point.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/point.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/point.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/point.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/point.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/point.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.cc > CMakeFiles/synapse_protobuf.dir/point.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.cc > CMakeFiles/synapse_protobuf.dir/point.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/point.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/point.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.cc -o CMakeFiles/synapse_protobuf.dir/point.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.cc -o CMakeFiles/synapse_protobuf.dir/point.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o: proto/pose.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/pose.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/pose.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.cc > CMakeFiles/synapse_protobuf.dir/pose.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.cc > CMakeFiles/synapse_protobuf.dir/pose.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/pose.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/pose.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.cc -o CMakeFiles/synapse_protobuf.dir/pose.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.cc -o CMakeFiles/synapse_protobuf.dir/pose.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o: proto/pose_with_covariance.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.cc > CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.cc > CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.cc -o CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.cc -o CMakeFiles/synapse_protobuf.dir/pose_with_covariance.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o: proto/quaternion.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.cc > CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.cc > CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.cc -o CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.cc -o CMakeFiles/synapse_protobuf.dir/quaternion.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o: proto/safety.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/safety.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/safety.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.cc > CMakeFiles/synapse_protobuf.dir/safety.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.cc > CMakeFiles/synapse_protobuf.dir/safety.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/safety.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/safety.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.cc -o CMakeFiles/synapse_protobuf.dir/safety.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.cc -o CMakeFiles/synapse_protobuf.dir/safety.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o: proto/sim_clock.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.cc > CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.cc > CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.cc -o CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.cc -o CMakeFiles/synapse_protobuf.dir/sim_clock.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o: proto/status.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/status.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/status.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/status.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/status.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/status.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.cc > CMakeFiles/synapse_protobuf.dir/status.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.cc > CMakeFiles/synapse_protobuf.dir/status.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/status.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/status.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.cc -o CMakeFiles/synapse_protobuf.dir/status.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.cc -o CMakeFiles/synapse_protobuf.dir/status.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o: proto/time.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/time.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/time.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/time.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/time.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/time.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.cc > CMakeFiles/synapse_protobuf.dir/time.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.cc > CMakeFiles/synapse_protobuf.dir/time.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/time.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/time.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.cc -o CMakeFiles/synapse_protobuf.dir/time.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.cc -o CMakeFiles/synapse_protobuf.dir/time.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o: proto/twist.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/twist.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/twist.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.cc > CMakeFiles/synapse_protobuf.dir/twist.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.cc > CMakeFiles/synapse_protobuf.dir/twist.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/twist.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/twist.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.cc -o CMakeFiles/synapse_protobuf.dir/twist.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.cc -o CMakeFiles/synapse_protobuf.dir/twist.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o: proto/twist_with_covariance.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.cc > CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.cc > CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.cc -o CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.cc -o CMakeFiles/synapse_protobuf.dir/twist_with_covariance.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o: proto/vector3.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.cc > CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.cc > CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.cc -o CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.cc -o CMakeFiles/synapse_protobuf.dir/vector3.pb.cc.s
 
 proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/flags.make
 proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o: proto/wheel_odometry.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o: proto/CMakeFiles/synapse_protobuf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o -c /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o -MF CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o.d -o CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o -c /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.cc
 
 proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.i"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.cc > CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.i
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.cc > CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.i
 
 proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.s"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.cc -o CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.s
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.cc -o CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.s
 
 # Object files for target synapse_protobuf
 synapse_protobuf_OBJECTS = \
@@ -749,16 +749,16 @@ proto/libsynapse_protobuf.a: proto/CMakeFiles/synapse_protobuf.dir/vector3.pb.cc
 proto/libsynapse_protobuf.a: proto/CMakeFiles/synapse_protobuf.dir/wheel_odometry.pb.cc.o
 proto/libsynapse_protobuf.a: proto/CMakeFiles/synapse_protobuf.dir/build.make
 proto/libsynapse_protobuf.a: proto/CMakeFiles/synapse_protobuf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Linking CXX static library libsynapse_protobuf.a"
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && $(CMAKE_COMMAND) -P CMakeFiles/synapse_protobuf.dir/cmake_clean_target.cmake
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/synapse_protobuf.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Linking CXX static library libsynapse_protobuf.a"
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && $(CMAKE_COMMAND) -P CMakeFiles/synapse_protobuf.dir/cmake_clean_target.cmake
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/synapse_protobuf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 proto/CMakeFiles/synapse_protobuf.dir/build: proto/libsynapse_protobuf.a
 .PHONY : proto/CMakeFiles/synapse_protobuf.dir/build
 
 proto/CMakeFiles/synapse_protobuf.dir/clean:
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto && $(CMAKE_COMMAND) -P CMakeFiles/synapse_protobuf.dir/cmake_clean.cmake
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto && $(CMAKE_COMMAND) -P CMakeFiles/synapse_protobuf.dir/cmake_clean.cmake
 .PHONY : proto/CMakeFiles/synapse_protobuf.dir/clean
 
 proto/CMakeFiles/synapse_protobuf.dir/depend: proto/actuators.pb.cc
@@ -817,6 +817,6 @@ proto/CMakeFiles/synapse_protobuf.dir/depend: proto/vector3.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/depend: proto/vector3.pb.h
 proto/CMakeFiles/synapse_protobuf.dir/depend: proto/wheel_odometry.pb.cc
 proto/CMakeFiles/synapse_protobuf.dir/depend: proto/wheel_odometry.pb.h
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/synapse_protobuf /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto /home/tharun/cognipilot/cranium/build/synapse_protobuf /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/CMakeFiles/synapse_protobuf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/synapse_protobuf /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto /home/sanjay/cognipilot/cranium/build/synapse_protobuf /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/CMakeFiles/synapse_protobuf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : proto/CMakeFiles/synapse_protobuf.dir/depend
 

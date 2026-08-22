@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/synapse_protobuf
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/synapse_protobuf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/synapse_protobuf
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/synapse_protobuf
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/synapse_protobuf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/synapse_protobuf /home/tharun/cognipilot/cranium/src/synapse_protobuf /home/tharun/cognipilot/cranium/build/synapse_protobuf /home/tharun/cognipilot/cranium/build/synapse_protobuf /home/tharun/cognipilot/cranium/build/synapse_protobuf/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/synapse_protobuf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/synapse_protobuf /home/sanjay/cognipilot/cranium/src/synapse_protobuf /home/sanjay/cognipilot/cranium/build/synapse_protobuf /home/sanjay/cognipilot/cranium/build/synapse_protobuf /home/sanjay/cognipilot/cranium/build/synapse_protobuf/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

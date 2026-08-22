@@ -3,6 +3,11 @@
 #
 # FIXED: Committed intersection turns, active patient-seek state,
 #        strong sign-directed navigation, no more looping.
+#
+# MERGE NOTE: Obstacle avoidance ported from the earlier "committed timed
+# steer" implementation (proven reliable) to replace the camera-PID lane-hug
+# approach, which could stall waiting for LiDAR front_dist to clear. Sign /
+# junction navigation logic is unchanged.
 
 import rclpy
 from rclpy.node import Node
@@ -17,7 +22,7 @@ from synapse_msgs.msg import EdgeVectors, ServerCommunication
 PI = math.pi
 
 SPEED_MAX      = 1.0
-SPEED_NORMAL   = 0.20
+SPEED_NORMAL   = 0.40
 SPEED_TURN     = 0.12
 SPEED_SLOW     = 0.09
 SPEED_CREEP    = 0.06
@@ -37,13 +42,16 @@ OBSTACLE_PERSIST_CNT  = 3     # consecutive LiDAR ticks before triggering avoida
 
 # Timings
 STARTUP_GRACE_S       = 2.5
-TURN_COMMIT_S         = 3.5
+TURN_COMMIT_S         = 3.0
 TURN_STEER_VAL        = 1.0
-AVOIDANCE_S           = 2.0
-SIGN_CONFIRM_CNT      = 1
-SIGN_COOLDOWN_S       = 6.0
-SIGN_TO_JUNCTION_MIN_S = 0.5  # min seconds after sign before junction can fire (avoids firing at sign itself)
-JUNCTION_TIMEOUT_S    = 5.0   # safety: clear junction nav if stuck for this long
+AVOIDANCE_S           = 2.0    # duration of the committed obstacle-avoidance steer
+OBSTACLE_AVOID_STEER  = 0.75   # fixed steer magnitude used during obstacle avoidance (proven-reliable value)
+SIGN_CONFIRM_CNT      = 2     # consecutive frames to confirm a sign
+SIGN_COOLDOWN_S       = 8.0   # MUST be > LOCK_RELEASE_S in detect node (6s) to prevent re-arm
+SIGN_TO_JUNCTION_MIN_S = 1.5  # min seconds after FIRST sign sight before junction can fire
+JUNCTION_TIMEOUT_S    = 8.0   # safety: clear junction nav if stuck for this long
+JUNCTION_DETECT_COUNT = 4     # consecutive frames confirming junction geometry
+LANE_HUG_OFFSET       = 135.0  # px: how close to hug the lane edge while seeking a junction
 QR_DWELL_S            = 2.0
 SERVER_TIMEOUT_S      = 8.0
 
@@ -127,21 +135,24 @@ class LineFollower(Node):
         self._sign_lock_until = 0.0  # epoch time: ignore signs until this time
 
         # Pending direction: remembered from sign board, executed at junction
-        self._pending_direction = None   # 'LEFT' / 'RIGHT' — waiting for junction
+        self._pending_direction = None   # 'LEFT' / 'RIGHT' / 'STRAIGHT' — waiting for junction
         self._pending_dest      = None   # e.g. 'PATIENT_1' the pending dir belongs to
         self._sign_seen_t       = 0.0    # when sign was stored
+        self._sign_lock_until   = 0.0    # cooldown end time
+        self._sign_buffer       = {}     # buffer for multi-sign confirmation
 
         # Junction navigation state
         self._junction_active   = False   # True while steering through a junction
         self._junction_start_t  = 0.0    # when junction nav started (for timeout)
         self._last_vec_count    = 2      # last known vector count
+        self._junction_detect_cnt = 0    # frames since 0 or 1 vector detected
 
         # Committed turn state
         self._turn_steer      = 0.0
         self._turn_end_t      = 0.0
         self._pre_turn_state  = S.SEEK_PATIENT
 
-        # Avoidance state
+        # Avoidance state (committed timed steer — ported from the proven implementation)
         self._avoid_steer    = 0.0
         self._avoid_end_t    = 0.0
         self._pre_avoid_state= S.SEEK_PATIENT
@@ -207,71 +218,125 @@ class LineFollower(Node):
     #  LANE VECTOR CALLBACK
     # ──────────────────────────────────────────────────────────────
     def _cb_vectors(self, msg):
-        """Lane vector callback — also handles camera-based junction detection.
+        """Lane vector callback — handles PID following + camera-guided junction turning.
 
-        Junction logic:
-          1. While driving normally (vector_count == 2), PID runs as usual.
-          2. When vector_count drops to 0 or 1 AND a sign direction is stored
-             AND SIGN_TO_JUNCTION_MIN_S has passed → junction detected.
-             Apply the stored direction as a hard steering bias; stop PID.
-          3. When vector_count returns to 2 (buggy is now in the new lane),
-             consume (clear) the stored direction and resume normal PID.
+        When a sign direction is set (_pending_direction):
+          - The buggy drifts toward the correct side of its current lane (hug left or right).
+          - The moment a new lane appears on that side (vector_count goes from 1 to 2,
+            with a line on the expected side), the buggy naturally follows it.
+          - No timer, no blind commit — the camera confirms the turn at every step.
+
+        NOTE: Obstacle avoidance no longer biases this PID — it now uses a fixed,
+        timed steer command issued directly in the AVOID_OBSTACLE state (see _loop),
+        which overrides whatever this callback computes for the duration of the maneuver.
         """
-        w  = float(msg.image_width)
-        hw = w / 2.0
+        w   = float(msg.image_width)
+        hw  = w / 2.0
         now = time.time()
         self._last_vec_count = msg.vector_count
 
-        # ── Hugging Mode State Machine ──────────────────────────────────
-        if self._pending_direction and now - self._sign_seen_t >= SIGN_TO_JUNCTION_MIN_S:
-            if not self._junction_active:
-                self._junction_active  = True
-                self._junction_start_t = now
-                self._sign_lock_until  = now + SIGN_COOLDOWN_S
-                self.get_logger().info(f'[JUNCTION] Hugging {self._pending_direction} lane line toward {self._pending_dest}')
-
-        if self._junction_active and now - self._junction_start_t > TURN_COMMIT_S:
-            self._junction_active   = False
-            self._pending_direction = None
-            self._pending_dest      = None
-            self.get_logger().info('[JUNCTION] Turn complete — resuming normal lane follow')
-
-        # ── PID Line Following (with Hugging) ──────────────────────────
+        # ── No lines at all — hold last steer ─────────────────────────
         if msg.vector_count == 0:
-            return   # no lines — hold last steer
+            return
+
+        # ── Extract lane line centers ──────────────────────────────────
+        v1  = msg.vector_1
+        cx1 = (v1[0].x + v1[1].x) / 2.0
 
         if msg.vector_count == 1:
-            v   = msg.vector_1
-            cx  = (v[0].x + v[1].x) / 2.0
-            # If we only see one line, assume it's the one we're closest to
-            if cx > hw:
-                mid = cx - 150.0  # Line on right
+            # Only one line visible. Use it as a reference with an assumed offset.
+            if cx1 > hw:
+                # Right line only
+                cx_left  = None
+                cx_right = cx1
             else:
-                mid = cx + 150.0  # Line on left
-            err = hw - mid
+                # Left line only
+                cx_left  = cx1
+                cx_right = None
         else:
-            v1  = msg.vector_1
-            v2  = msg.vector_2
-            cx1 = (v1[0].x + v1[1].x) / 2.0
-            cx2 = (v2[0].x + v2[1].x) / 2.0
-
-            if self._junction_active and self._pending_direction == 'LEFT':
-                # HUG LEFT: Ignore right line, track left line only
-                mid = cx1 + 150.0
-            elif self._junction_active and self._pending_direction == 'RIGHT':
-                # HUG RIGHT: Ignore left line, track right line only
-                mid = cx2 - 150.0
+            v2   = msg.vector_2
+            cx2  = (v2[0].x + v2[1].x) / 2.0
+            # Sort: lower x = left line, higher x = right line
+            if cx1 < cx2:
+                cx_left, cx_right = cx1, cx2
             else:
-                # NORMAL: Stay in the middle
-                mid = (cx1 + cx2) / 2.0
-                
-            err = hw - mid
+                cx_left, cx_right = cx2, cx1
 
-        deriv         = err - self._prev_err
-        self._prev_err = err
-        raw = KP_LANE * err + KD_LANE * deriv
-        raw = max(min(raw, MAX_STEER), -MAX_STEER)
-        self._steer_filt = STEER_ALPHA * raw + (1 - STEER_ALPHA) * self._steer_filt
+        # ── Compute PID target mid-point ───────────────────────────────
+        # Priority: sign-directed junction hug → normal following
+        hug_dir = (
+            self._pending_direction
+            if self._pending_direction and now - self._sign_seen_t >= SIGN_TO_JUNCTION_MIN_S
+            else None
+        )
+
+        if hug_dir == 'LEFT':
+            # Hug left: track the left line edge
+            if cx_left is not None:
+                mid = cx_left + LANE_HUG_OFFSET
+            else:
+                mid = cx_right - LANE_HUG_OFFSET if cx_right is not None else hw
+
+        elif hug_dir == 'RIGHT':
+            # Hug right: track the right line edge
+            if cx_right is not None:
+                mid = cx_right - LANE_HUG_OFFSET
+            else:
+                mid = cx_left + LANE_HUG_OFFSET if cx_left is not None else hw
+
+        elif msg.vector_count == 1:
+            # Normal single-line following (no bias)
+            if cx_right is not None:
+                mid = cx_right - 150.0
+            else:
+                mid = cx_left + 150.0
+        else:
+            # Normal two-line following: stay in the middle
+            mid = (cx_left + cx_right) / 2.0
+
+        err               = hw - mid
+        deriv             = err - self._prev_err
+        self._prev_err    = err
+        raw               = KP_LANE * err + KD_LANE * deriv
+        raw               = max(min(raw, MAX_STEER), -MAX_STEER)
+        self._steer_filt  = STEER_ALPHA * raw + (1 - STEER_ALPHA) * self._steer_filt
+
+        # ── Junction detection: lane re-acquired on the target side ───
+        if self._pending_direction and now - self._sign_seen_t >= SIGN_TO_JUNCTION_MIN_S:
+
+            if self._pending_direction == 'STRAIGHT':
+                # No lane change needed — just clear and continue straight in lane center
+                self._junction_detect_cnt = 0
+                self._sign_lock_until = now + SIGN_COOLDOWN_S
+                self._sign_buffer.clear()
+                self.get_logger().info(
+                    f'[JUNCTION] ✓ STRAIGHT — continuing in lane center toward {self._pending_dest}')
+                self._pending_direction = None
+                self._pending_dest      = None
+                return
+
+            # For LEFT/RIGHT: wait until the buggy has naturally entered the new lane.
+            # A real junction lane is clearly offset from the straight-ahead centre.
+            if msg.vector_count == 2:
+                entered_left  = (self._pending_direction == 'LEFT'  and cx_left  is not None and cx_left  < hw * 0.6)
+                entered_right = (self._pending_direction == 'RIGHT' and cx_right is not None and cx_right > hw * 1.4)
+
+                if entered_left or entered_right:
+                    self._junction_detect_cnt += 1
+                    self.get_logger().debug(
+                        f'[JUNCTION] Lane re-acquired cnt={self._junction_detect_cnt}/{JUNCTION_DETECT_COUNT} '
+                        f'dir={self._pending_direction} cxL={cx_left} cxR={cx_right}')
+                    if self._junction_detect_cnt >= JUNCTION_DETECT_COUNT:
+                        self._junction_detect_cnt = 0
+                        self._sign_lock_until = now + SIGN_COOLDOWN_S
+                        self._sign_buffer.clear()
+                        self.get_logger().info(
+                            f'[JUNCTION] ✓ Entered new lane toward {self._pending_dest}')
+                        self._pending_direction = None
+                        self._pending_dest      = None
+                else:
+                    self._junction_detect_cnt = 0
+
 
     # ──────────────────────────────────────────────────────────────
     #  LIDAR CALLBACK
@@ -375,6 +440,10 @@ class LineFollower(Node):
         Receive sign detections formatted as "DESTINATION:DIRECTION"
         e.g. "PATIENT_1:LEFT"  or  "HOSPITAL_2:RIGHT"
         Only act when we are actively seeking that destination.
+
+        IMPORTANT: The detect node re-publishes the same locked sign for up to 6 seconds.
+        We must NOT reset _sign_seen_t or _junction_detect_cnt on repeated publications
+        of the same sign, or the junction timer will never progress.
         """
         raw = (msg.data or '').strip()
         parts = raw.split(':')
@@ -384,71 +453,74 @@ class LineFollower(Node):
 
         now = time.time()
         if now < self._sign_lock_until:
-            return  # in cooldown after a committed turn
+            return  # in cooldown after a committed turn — ignore everything
 
-        # Buffer confirmation
-        if dest == self._sign_buf_dest and direction == self._sign_buf_dir:
-            self._sign_buf_cnt += 1
-        else:
-            self._sign_buf_dest = dest
-            self._sign_buf_dir  = direction
-            self._sign_buf_cnt  = 1
+        # ── Buffer / confirmation window ─────────────────────────────
+        # Use a dict to track consecutive hits per-sign, in case detect node
+        # publishes multiple signs (e.g. PATIENT_1 and PATIENT_2) in the same frame.
+        key = f'{dest}:{direction}'
+        self._sign_buffer[key] = self._sign_buffer.get(key, 0) + 1
 
-        if self._sign_buf_cnt < SIGN_CONFIRM_CNT:
+        if self._sign_buffer[key] < SIGN_CONFIRM_CNT:
             return
 
-        # Determine the valid target for the current seek state
+        # ── Filter by what we're currently seeking ───────────────────
         if self._state in (S.SEEK_PATIENT, S.COMMITTED_TURN, S.STARTUP, S.PATIENT_QR_SEEN):
-            target = self._current_patient  # e.g. 'PATIENT_1' from server, or we accept any
-            # Accept ANY patient sign if we're in generic patient-seeking mode
             patient_seeking = True
+            target = self._current_patient
         else:
-            target = self._assigned_hospital  # e.g. 'HOSPITAL_3' from server, or 'HOSPITAL'
             patient_seeking = False
+            target = self._assigned_hospital
 
         if patient_seeking:
             if not dest.startswith('PATIENT'):
-                return  # we want patient signs, not hospital signs
-            # Accept the specific patient we're seeking, OR any patient if target is generic
-            if target and not target.startswith('PATIENT'):
                 return
             if target and target.startswith('PATIENT') and dest != target:
                 return  # sign is for a different patient
         else:
             if not dest.startswith('HOSPITAL'):
-                return  # we want hospital signs, not patient signs
-            # Accept the specific hospital assigned, OR any hospital if target is generic
+                return
             if target and target != 'HOSPITAL' and dest != target:
                 return  # sign is for a different hospital
 
-        if direction == 'STRAIGHT':
-            # No turn needed — but still remember it so we know we scanned this sign
-            self.get_logger().info(
-                f'[SIGN] {dest} is STRAIGHT — no turn needed, continuing')
-            return
+        # ── Lock: once a direction is committed for this destination, don't
+        #    let alternating detections of the same dest flip the direction.
+        #    Only a *new destination* is allowed to replace a pending direction.
+        if self._pending_dest == dest and self._pending_direction is not None:
+            if self._pending_direction != direction:
+                # Same destination, different direction — the detect node is flickering.
+                # Ignore; keep the first committed direction.
+                self.get_logger().debug(
+                    f'[SIGN] Ignoring flicker {dest}:{direction} '
+                    f'(locked to {self._pending_direction})')
+                return
+            else:
+                # Exact same sign repeated
+                age = now - self._sign_seen_t
+                self.get_logger().debug(
+                    f'[SIGN] Re-pub {dest}:{direction} (age={age:.1f}s, '
+                    f'jct_cnt={self._junction_detect_cnt})')
+                return
 
-        # ── Store pending direction — DO NOT turn immediately ─────────
-        # The buggy will turn when it reaches the junction (vector_count==0 for
-        # JUNCTION_PERSIST_CNT consecutive frames AND SIGN_MIN_DELAY_S has elapsed).
-        self._pending_direction = direction
-        self._pending_dest      = dest
-        self._sign_seen_t       = now
-        self._junction_cnt      = 0   # reset junction counter — fresh watch
+        # ── Genuinely new sign (new destination or first time) — arm it ──
+        old = f'{self._pending_dest}:{self._pending_direction}' if self._pending_dest else 'none'
+        self._pending_direction   = direction
+        self._pending_dest        = dest
+        self._sign_seen_t         = now
+        self._junction_detect_cnt = 0   # fresh watch for this new sign
+        self._sign_buffer.clear()       # clear buffer so other signs don't accidentally confirm later
         self.get_logger().info(
-            f'[SIGN] Remembered {dest}:{direction} — driving to junction')
+            f'[SIGN] NEW {dest}:{direction} (replaced {old}) — driving to junction')
 
     def _commit_turn(self, direction, now=None):
+        """Legacy entry point kept for compatibility. With lane-guided turning,
+        all turn execution is now done by the PID itself. This just resets state."""
         now = now or time.time()
-        steer = TURN_STEER_VAL if direction == 'LEFT' else -TURN_STEER_VAL
-        self._turn_steer      = steer
-        self._turn_end_t      = now + TURN_COMMIT_S
         self._sign_lock_until = now + SIGN_COOLDOWN_S
-        self._pre_turn_state  = self._state
-        self._sign_buf_cnt    = 0
+        self._sign_buffer.clear()
         self.get_logger().info(
-            f'[SIGN] Committed {direction} steer={steer:.2f} '
-            f'for {TURN_COMMIT_S}s toward {self._sign_buf_dest}')
-        self._set_state(S.COMMITTED_TURN)
+            f'[SIGN] Direction {direction} consumed — cooldown {SIGN_COOLDOWN_S}s')
+        # Do NOT enter COMMITTED_TURN state; let the PID guide the turn naturally
 
     # ──────────────────────────────────────────────────────────────
     #  LANE SPEED HELPER
@@ -463,6 +535,8 @@ class LineFollower(Node):
 
     # ──────────────────────────────────────────────────────────────
     #  OBSTACLE CHECK
+    #  (ported from the earlier, proven implementation: a committed,
+    #  fixed-duration hard steer rather than a camera-PID lane hug)
     # ──────────────────────────────────────────────────────────────
     def _obstacle_check(self, current_state):
         """Returns True if we triggered avoidance.
@@ -491,9 +565,9 @@ class LineFollower(Node):
                 f'front={self._front_dist:.2f}m')
             return False
 
-        # Persistent obstacle confirmed — commit to avoidance
+        # Persistent obstacle confirmed — commit to a fixed, timed avoidance steer
         self._obstacle_cnt = 0
-        avoid = TURN_STEER_VAL if self._left_dist > self._right_dist else -TURN_STEER_VAL
+        avoid = OBSTACLE_AVOID_STEER if self._left_dist > self._right_dist else -OBSTACLE_AVOID_STEER
         self._avoid_steer     = avoid
         self._avoid_end_t     = time.time() + AVOIDANCE_S
         self._pre_avoid_state = current_state
@@ -620,7 +694,8 @@ class LineFollower(Node):
                 self._publish()
                 return
             s = self._steer_filt
-            self._drive(self._lane_speed(s), s)
+            speed = SPEED_SLOW if self._pending_direction else self._lane_speed(s)
+            self._drive(speed, s)
             self._publish()
             return
 
@@ -699,7 +774,8 @@ class LineFollower(Node):
             self._publish()
             return
         s = self._steer_filt
-        self._drive(self._lane_speed(s), s)
+        speed = SPEED_SLOW if self._pending_direction else self._lane_speed(s)
+        self._drive(speed, s)
         self._publish()
 
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/tharun/cognipilot/cranium/src/synapse_gz
+# Install script for directory: /home/sanjay/cognipilot/cranium/src/synapse_gz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tharun/cognipilot/cranium/install/synapse_gz")
+  set(CMAKE_INSTALL_PREFIX "/home/sanjay/cognipilot/cranium/install/synapse_gz")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/synapse_gz/synapse_gz"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/synapse_gz" TYPE EXECUTABLE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/synapse_gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/synapse_gz" TYPE EXECUTABLE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/synapse_gz")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/synapse_gz/synapse_gz" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/synapse_gz/synapse_gz")
     file(RPATH_CHANGE
@@ -63,15 +63,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE DIRECTORY FILES "/home/tharun/cognipilot/cranium/src/synapse_gz/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE DIRECTORY FILES "/home/sanjay/cognipilot/cranium/src/synapse_gz/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/synapse_gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/synapse_gz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/synapse_gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/synapse_gz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,7 +79,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -87,42 +87,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_index/share/ament_index/resource_index/packages/synapse_gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_index/share/ament_index/resource_index/packages/synapse_gz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz/cmake" TYPE FILE FILES
-    "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_core/synapse_gzConfig.cmake"
-    "/home/tharun/cognipilot/cranium/build/synapse_gz/ament_cmake_core/synapse_gzConfig-version.cmake"
+    "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_core/synapse_gzConfig.cmake"
+    "/home/sanjay/cognipilot/cranium/build/synapse_gz/ament_cmake_core/synapse_gzConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/tharun/cognipilot/cranium/src/synapse_gz/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_gz" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/src/synapse_gz/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -133,5 +133,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tharun/cognipilot/cranium/build/synapse_gz/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sanjay/cognipilot/cranium/build/synapse_gz/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/b3rb_desktop/b3rb_desktop
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/b3rb_desktop/b3rb_desktop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/b3rb_desktop
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/b3rb_desktop
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/b3rb_desktop_uninstall.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/b3rb_desktop_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sanjay/cognipilot/cranium/build/b3rb_desktop/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sanjay/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sanjay/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/b3rb_desktop_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/b3rb_desktop_uninstall.dir/build.make CMakeFiles/b3rb_desktop_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/b3rb_desktop_uninstall.dir/build.make CMakeFiles/b3rb_desktop_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles --progress-num= "Built target b3rb_desktop_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sanjay/cognipilot/cranium/build/b3rb_desktop/CMakeFiles --progress-num= "Built target b3rb_desktop_uninstall"
 .PHONY : CMakeFiles/b3rb_desktop_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/b3rb_desktop_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sanjay/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/b3rb_desktop_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tharun/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sanjay/cognipilot/cranium/build/b3rb_desktop/CMakeFiles 0
 .PHONY : CMakeFiles/b3rb_desktop_uninstall.dir/rule
 
 # Convenience name for target.

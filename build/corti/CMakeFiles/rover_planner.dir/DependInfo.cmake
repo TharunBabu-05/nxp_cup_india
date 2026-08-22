@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tharun/cognipilot/cranium/src/corti/src/rover_planner.cpp" "CMakeFiles/rover_planner.dir/src/rover_planner.cpp.o" "gcc" "CMakeFiles/rover_planner.dir/src/rover_planner.cpp.o.d"
+  "/home/sanjay/cognipilot/cranium/src/corti/src/rover_planner.cpp" "CMakeFiles/rover_planner.dir/src/rover_planner.cpp.o" "gcc" "CMakeFiles/rover_planner.dir/src/rover_planner.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tharun/cognipilot/cranium/build/corti/CMakeFiles/bezier6.dir/DependInfo.cmake"
+  "/home/sanjay/cognipilot/cranium/build/corti/CMakeFiles/bezier6.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

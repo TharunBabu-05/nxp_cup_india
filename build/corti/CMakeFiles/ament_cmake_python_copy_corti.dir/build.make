@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/corti
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/corti
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/corti
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/corti
 
 # Utility rule file for ament_cmake_python_copy_corti.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_corti.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_corti.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_corti:
-	/usr/bin/cmake -E copy_directory /home/tharun/cognipilot/cranium/src/corti/corti /home/tharun/cognipilot/cranium/build/corti/ament_cmake_python/corti/corti
+	/usr/bin/cmake -E copy_directory /home/sanjay/cognipilot/cranium/src/corti/corti /home/sanjay/cognipilot/cranium/build/corti/ament_cmake_python/corti/corti
 
 ament_cmake_python_copy_corti: CMakeFiles/ament_cmake_python_copy_corti
 ament_cmake_python_copy_corti: CMakeFiles/ament_cmake_python_copy_corti.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_corti.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_corti.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_corti.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/corti && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/corti /home/tharun/cognipilot/cranium/src/corti /home/tharun/cognipilot/cranium/build/corti /home/tharun/cognipilot/cranium/build/corti /home/tharun/cognipilot/cranium/build/corti/CMakeFiles/ament_cmake_python_copy_corti.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/corti && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/corti /home/sanjay/cognipilot/cranium/src/corti /home/sanjay/cognipilot/cranium/build/corti /home/sanjay/cognipilot/cranium/build/corti /home/sanjay/cognipilot/cranium/build/corti/CMakeFiles/ament_cmake_python_copy_corti.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_corti.dir/depend
 

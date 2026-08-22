@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/cerebri_bringup
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/cerebri_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/cerebri_bringup
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/cerebri_bringup
 
 # Utility rule file for cerebri_bringup_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cerebri_bringup_uninstall.dir/compiler_depend.make
 include CMakeFiles/cerebri_bringup_uninstall.dir/progress.make
 
 CMakeFiles/cerebri_bringup_uninstall:
-	/usr/bin/cmake -P /home/tharun/cognipilot/cranium/build/cerebri_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/sanjay/cognipilot/cranium/build/cerebri_bringup/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 cerebri_bringup_uninstall: CMakeFiles/cerebri_bringup_uninstall
 cerebri_bringup_uninstall: CMakeFiles/cerebri_bringup_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cerebri_bringup_uninstall.dir/clean:
 .PHONY : CMakeFiles/cerebri_bringup_uninstall.dir/clean
 
 CMakeFiles/cerebri_bringup_uninstall.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/cerebri_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/cerebri_bringup /home/tharun/cognipilot/cranium/src/cerebri_bringup /home/tharun/cognipilot/cranium/build/cerebri_bringup /home/tharun/cognipilot/cranium/build/cerebri_bringup /home/tharun/cognipilot/cranium/build/cerebri_bringup/CMakeFiles/cerebri_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/cerebri_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/cerebri_bringup /home/sanjay/cognipilot/cranium/src/cerebri_bringup /home/sanjay/cognipilot/cranium/build/cerebri_bringup /home/sanjay/cognipilot/cranium/build/cerebri_bringup /home/sanjay/cognipilot/cranium/build/cerebri_bringup/CMakeFiles/cerebri_bringup_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cerebri_bringup_uninstall.dir/depend
 

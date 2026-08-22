@@ -1,7 +1,7 @@
 proto/CMakeFiles/synapse_protobuf.dir/joy.pb.cc.o: \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.cc \
  /usr/include/stdc-predef.h \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.h \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.h \
  /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

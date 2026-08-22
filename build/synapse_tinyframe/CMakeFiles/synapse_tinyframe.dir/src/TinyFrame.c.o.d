@@ -1,7 +1,7 @@
 CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o: \
- /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c \
+ /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c \
  /usr/include/stdc-predef.h \
- /home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe/TinyFrame.h \
+ /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe/TinyFrame.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -46,7 +46,7 @@ CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h \
- /home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe/TF_Config.h \
+ /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe/TF_Config.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \

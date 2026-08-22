@@ -54,9 +54,7 @@ except ImportError:
 
 # ── Tuning ────────────────────────────────────────────────────────
 CONF_THRESHOLD     = 0.55   # minimum detection confidence
-SIGN_CONFIRM_COUNT = 3      # consecutive identical frames before locking
-LOCK_PUBLISH_HZ    = 2.0    # while locked: republish this many times/sec
-LOCK_RELEASE_S     = 6.0    # release lock after this many seconds
+# Locking is now handled entirely by the runner node to allow processing multiple signs simultaneously
 
 # ── Model path (primary = new train-5, fallback = old model) ─────
 MODEL_PATH = os.path.expanduser(
@@ -111,15 +109,6 @@ class ObjectRecognizer(Node):
         self.model = None
         self._load_model()
 
-        # Consecutive-frame confirmation window
-        self._candidate: str = ''
-        self._candidate_count: int = 0
-
-        # Sign-lock state
-        self._locked_sign: str = ''
-        self._lock_start_t: float = 0.0
-        self._last_lock_pub_t: float = 0.0
-
         self.get_logger().info(
             '[DETECT] Object Recognizer ready — YOLOv8n train-5 (18 combined classes).')
 
@@ -135,6 +124,16 @@ class ObjectRecognizer(Node):
                 try:
                     self.model = YOLO(path, task='detect')
                     self.get_logger().info(f'[DETECT] Loaded model: {path}')
+                    
+                    # ── Warmup to reduce startup latency ──
+                    self.get_logger().info('[DETECT] Warming up model...')
+                    try:
+                        dummy = np.zeros((240, 320, 3), dtype=np.uint8)
+                        self.model(dummy, verbose=False)
+                        self.get_logger().info('[DETECT] Warmup complete.')
+                    except Exception as e:
+                        self.get_logger().warn(f'[DETECT] Warmup failed: {e}')
+
                     # Log class list so we can verify in terminal
                     for idx, name in self.model.names.items():
                         self.get_logger().debug(f'  class {idx}: {name}')
@@ -151,41 +150,14 @@ class ObjectRecognizer(Node):
         if image is None:
             return
 
-        now = time.time()
-
-        # ── While locked: keep re-publishing the locked sign ─────
-        if self._locked_sign:
-            if now - self._lock_start_t < LOCK_RELEASE_S:
-                if now - self._last_lock_pub_t >= (1.0 / LOCK_PUBLISH_HZ):
-                    self._publish(self._locked_sign)
-                    self._last_lock_pub_t = now
-                return   # skip fresh inference while locked
-            else:
-                self.get_logger().info(
-                    f'[DETECT] Lock released: {self._locked_sign}')
-                self._locked_sign     = ''
-                self._candidate       = ''
-                self._candidate_count = 0
-
         # ── Fresh inference ───────────────────────────────────────
-        result = self._infer(image)
+        results = self._infer(image)
 
-        if result is None:
-            self._candidate_count = 0
+        if not results:
             return
 
-        if result == self._candidate:
-            self._candidate_count += 1
-        else:
-            self._candidate       = result
-            self._candidate_count = 1
-
-        if self._candidate_count >= SIGN_CONFIRM_COUNT:
-            self._locked_sign     = result
-            self._lock_start_t    = now
-            self._last_lock_pub_t = 0.0  # force immediate first publish
-            self._candidate_count = 0
-            self.get_logger().info(f'[DETECT] LOCKED: {result}')
+        for r in results:
+            self._publish(r)
 
     # ── publish helper ────────────────────────────────────────────
     def _publish(self, sign: str):
@@ -197,31 +169,28 @@ class ObjectRecognizer(Node):
     # ── YOLOv8 inference ─────────────────────────────────────────
     def _infer(self, image):
         """
-        Run YOLO inference and return a string like 'PATIENT_1:LEFT' or None.
+        Run YOLO inference and return a list of strings like ['PATIENT_1:LEFT'].
 
         Since the model was trained on combined classes (A_Left, etc.), each
-        detected box already encodes BOTH destination AND direction — no spatial
-        pairing or carry-over cache needed.
+        detected box already encodes BOTH destination AND direction. We return
+        all confident detections in the frame.
         """
         if self.model is None:
-            return None
+            return []
 
         try:
             results = self.model(image, verbose=False, conf=CONF_THRESHOLD)
             if not results:
-                return None
+                return []
 
             boxes = results[0].boxes
             if boxes is None or len(boxes) == 0:
-                return None
+                return []
 
-            # Collect all valid hits, keep the highest-confidence one
-            best_conf   = -1.0
-            best_result = None
+            valid_results = []
 
             for box in boxes:
                 cls_id = int(box.cls[0].item())
-                conf   = float(box.conf[0].item())
 
                 class_name = self.model.names.get(cls_id)
                 if class_name is None:
@@ -233,16 +202,13 @@ class ObjectRecognizer(Node):
                     continue
 
                 dest, direction = CLASS_MAP[class_name]
+                valid_results.append(f'{dest}:{direction}')
 
-                if conf > best_conf:
-                    best_conf   = conf
-                    best_result = f'{dest}:{direction}'
-
-            return best_result
+            return valid_results
 
         except Exception as e:
             self.get_logger().debug(f'[DETECT] Inference error: {e}')
-            return None
+            return []
 
 
 def main(args=None):

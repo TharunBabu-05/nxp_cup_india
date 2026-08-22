@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include -I/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe
+C_INCLUDES = -I/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include -I/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe
 
 C_FLAGS = -Wall -Wextra -Wpedantic
 

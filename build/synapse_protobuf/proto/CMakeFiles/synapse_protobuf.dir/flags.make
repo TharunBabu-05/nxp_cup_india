@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/../..
+CXX_INCLUDES = -I/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/../..
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic
 

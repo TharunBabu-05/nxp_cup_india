@@ -1,5 +1,5 @@
-/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierCurve.idl
-/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierTrajectory.idl
-/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/Status.idl
-/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/EdgeVectors.idl
-/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/ServerCommunication.idl
+/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierCurve.idl
+/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierTrajectory.idl
+/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/Status.idl
+/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/EdgeVectors.idl
+/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/ServerCommunication.idl

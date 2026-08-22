@@ -1,8 +1,8 @@
-# Install script for directory: /home/tharun/cognipilot/cranium/build/synapse_msgs/synapse_msgs__rs
+# Install script for directory: /home/sanjay/cognipilot/cranium/build/synapse_msgs/synapse_msgs__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tharun/cognipilot/cranium/install/synapse_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/sanjay/cognipilot/cranium/install/synapse_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

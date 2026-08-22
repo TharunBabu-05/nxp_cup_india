@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/synapse_tinyframe
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/synapse_tinyframe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/synapse_tinyframe
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/synapse_tinyframe
 
 # Include any dependencies generated for this target.
 include CMakeFiles/synapse_tinyframe.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/synapse_tinyframe.dir/progress.make
 include CMakeFiles/synapse_tinyframe.dir/flags.make
 
 CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o: CMakeFiles/synapse_tinyframe.dir/flags.make
-CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o: /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c
+CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o: /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c
 CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o: CMakeFiles/synapse_tinyframe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o -MF CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o.d -o CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o -c /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o -MF CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o.d -o CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o -c /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c
 
 CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c > CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c > CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.i
 
 CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c -o CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c -o CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.s
 
 CMakeFiles/synapse_tinyframe.dir/src/utils.c.o: CMakeFiles/synapse_tinyframe.dir/flags.make
-CMakeFiles/synapse_tinyframe.dir/src/utils.c.o: /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c
+CMakeFiles/synapse_tinyframe.dir/src/utils.c.o: /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c
 CMakeFiles/synapse_tinyframe.dir/src/utils.c.o: CMakeFiles/synapse_tinyframe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/synapse_tinyframe.dir/src/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/synapse_tinyframe.dir/src/utils.c.o -MF CMakeFiles/synapse_tinyframe.dir/src/utils.c.o.d -o CMakeFiles/synapse_tinyframe.dir/src/utils.c.o -c /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/synapse_tinyframe.dir/src/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/synapse_tinyframe.dir/src/utils.c.o -MF CMakeFiles/synapse_tinyframe.dir/src/utils.c.o.d -o CMakeFiles/synapse_tinyframe.dir/src/utils.c.o -c /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c
 
 CMakeFiles/synapse_tinyframe.dir/src/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/synapse_tinyframe.dir/src/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c > CMakeFiles/synapse_tinyframe.dir/src/utils.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c > CMakeFiles/synapse_tinyframe.dir/src/utils.c.i
 
 CMakeFiles/synapse_tinyframe.dir/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/synapse_tinyframe.dir/src/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c -o CMakeFiles/synapse_tinyframe.dir/src/utils.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c -o CMakeFiles/synapse_tinyframe.dir/src/utils.c.s
 
 # Object files for target synapse_tinyframe
 synapse_tinyframe_OBJECTS = \
@@ -109,7 +109,7 @@ libsynapse_tinyframe.a: CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o
 libsynapse_tinyframe.a: CMakeFiles/synapse_tinyframe.dir/src/utils.c.o
 libsynapse_tinyframe.a: CMakeFiles/synapse_tinyframe.dir/build.make
 libsynapse_tinyframe.a: CMakeFiles/synapse_tinyframe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libsynapse_tinyframe.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libsynapse_tinyframe.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/synapse_tinyframe.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/synapse_tinyframe.dir/link.txt --verbose=$(VERBOSE)
 
@@ -122,6 +122,6 @@ CMakeFiles/synapse_tinyframe.dir/clean:
 .PHONY : CMakeFiles/synapse_tinyframe.dir/clean
 
 CMakeFiles/synapse_tinyframe.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/synapse_tinyframe && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/synapse_tinyframe /home/tharun/cognipilot/cranium/src/synapse_tinyframe /home/tharun/cognipilot/cranium/build/synapse_tinyframe /home/tharun/cognipilot/cranium/build/synapse_tinyframe /home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/synapse_tinyframe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/synapse_tinyframe && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/synapse_tinyframe /home/sanjay/cognipilot/cranium/src/synapse_tinyframe /home/sanjay/cognipilot/cranium/build/synapse_tinyframe /home/sanjay/cognipilot/cranium/build/synapse_tinyframe /home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/synapse_tinyframe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/synapse_tinyframe.dir/depend
 

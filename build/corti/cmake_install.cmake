@@ -1,8 +1,8 @@
-# Install script for directory: /home/tharun/cognipilot/cranium/src/corti
+# Install script for directory: /home/sanjay/cognipilot/cranium/src/corti
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tharun/cognipilot/cranium/install/corti")
+  set(CMAKE_INSTALL_PREFIX "/home/sanjay/cognipilot/cranium/install/corti")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,26 +43,26 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/pythonpath.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/pythonpath.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/corti-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_python/corti/corti.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/corti-0.0.0-py3.10.egg-info" TYPE DIRECTORY FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_python/corti/corti.egg-info/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/corti" TYPE DIRECTORY FILES "/home/tharun/cognipilot/cranium/src/corti/corti/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/corti" TYPE DIRECTORY FILES "/home/sanjay/cognipilot/cranium/src/corti/corti/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/tharun/cognipilot/cranium/install/corti/local/lib/python3.10/dist-packages/corti"
+        "/home/sanjay/cognipilot/cranium/install/corti/local/lib/python3.10/dist-packages/corti"
       )
 endif()
 
@@ -73,12 +73,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/rover_planner"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE EXECUTABLE FILES "/home/tharun/cognipilot/cranium/build/corti/rover_planner")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE EXECUTABLE FILES "/home/sanjay/cognipilot/cranium/build/corti/rover_planner")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/rover_planner" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/rover_planner")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/rover_planner"
-         OLD_RPATH "/home/tharun/cognipilot/cranium/install/synapse_msgs/lib:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/sanjay/cognipilot/cranium/install/synapse_msgs/lib:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/rover_planner")
@@ -93,7 +93,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/odom_to_tf"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE EXECUTABLE FILES "/home/tharun/cognipilot/cranium/build/corti/odom_to_tf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE EXECUTABLE FILES "/home/sanjay/cognipilot/cranium/build/corti/odom_to_tf")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/odom_to_tf" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/odom_to_tf")
     file(RPATH_CHANGE
@@ -113,7 +113,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/tf_to_odom"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE EXECUTABLE FILES "/home/tharun/cognipilot/cranium/build/corti/tf_to_odom")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE EXECUTABLE FILES "/home/sanjay/cognipilot/cranium/build/corti/tf_to_odom")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/tf_to_odom" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/corti/tf_to_odom")
     file(RPATH_CHANGE
@@ -127,23 +127,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE DIRECTORY FILES "/home/tharun/cognipilot/cranium/src/corti/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE DIRECTORY FILES "/home/sanjay/cognipilot/cranium/src/corti/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE PROGRAM FILES "/home/tharun/cognipilot/cranium/src/corti/scripts/virtual_joy.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE PROGRAM FILES "/home/sanjay/cognipilot/cranium/src/corti/scripts/virtual_joy.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE PROGRAM FILES "/home/tharun/cognipilot/cranium/src/corti/scripts/rover_fixed_trajectory.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/corti" TYPE PROGRAM FILES "/home/sanjay/cognipilot/cranium/src/corti/scripts/rover_fixed_trajectory.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/corti")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/corti")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/corti")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/corti")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -151,7 +151,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -159,42 +159,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_index/share/ament_index/resource_index/packages/corti")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_index/share/ament_index/resource_index/packages/corti")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti/cmake" TYPE FILE FILES
-    "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_core/cortiConfig.cmake"
-    "/home/tharun/cognipilot/cranium/build/corti/ament_cmake_core/cortiConfig-version.cmake"
+    "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_core/cortiConfig.cmake"
+    "/home/sanjay/cognipilot/cranium/build/corti/ament_cmake_core/cortiConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/tharun/cognipilot/cranium/src/corti/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/corti" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/src/corti/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -205,5 +205,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tharun/cognipilot/cranium/build/corti/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sanjay/cognipilot/cranium/build/corti/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

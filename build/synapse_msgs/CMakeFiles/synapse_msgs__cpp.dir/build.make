@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/synapse_msgs
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/synapse_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/synapse_msgs
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/synapse_msgs
 
 # Utility rule file for synapse_msgs__cpp.
 
@@ -178,8 +178,8 @@ rosidl_generator_cpp/synapse_msgs/msg/bezier_curve.hpp: /opt/ros/humble/share/ge
 rosidl_generator_cpp/synapse_msgs/msg/bezier_curve.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityWithCovarianceStamped.idl
 rosidl_generator_cpp/synapse_msgs/msg/bezier_curve.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/synapse_msgs/msg/bezier_curve.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tharun/cognipilot/cranium/build/synapse_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/synapse_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/synapse_msgs/msg/detail/bezier_curve__builder.hpp: rosidl_generator_cpp/synapse_msgs/msg/bezier_curve.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/synapse_msgs/msg/detail/bezier_curve__builder.hpp
@@ -291,6 +291,6 @@ CMakeFiles/synapse_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/synapse_msgs__cpp.dir/clean
 
 CMakeFiles/synapse_msgs__cpp.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/synapse_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/synapse_msgs /home/tharun/cognipilot/cranium/src/synapse_msgs /home/tharun/cognipilot/cranium/build/synapse_msgs /home/tharun/cognipilot/cranium/build/synapse_msgs /home/tharun/cognipilot/cranium/build/synapse_msgs/CMakeFiles/synapse_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/synapse_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/synapse_msgs /home/sanjay/cognipilot/cranium/src/synapse_msgs /home/sanjay/cognipilot/cranium/build/synapse_msgs /home/sanjay/cognipilot/cranium/build/synapse_msgs /home/sanjay/cognipilot/cranium/build/synapse_msgs/CMakeFiles/synapse_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/synapse_msgs__cpp.dir/depend
 

@@ -1,13 +1,13 @@
 {
   "package_name": "synapse_msgs",
-  "output_dir": "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_typesupport_introspection_cpp/synapse_msgs",
+  "output_dir": "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_typesupport_introspection_cpp/synapse_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierCurve.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierTrajectory.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/Status.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/EdgeVectors.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/ServerCommunication.idl"
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierCurve.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/BezierTrajectory.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/Status.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/EdgeVectors.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs:msg/ServerCommunication.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -85,11 +85,11 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/BezierCurve.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/BezierTrajectory.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/Status.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/EdgeVectors.idl",
-    "/home/tharun/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/ServerCommunication.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/BezierCurve.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/BezierTrajectory.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/Status.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/EdgeVectors.idl",
+    "/home/sanjay/cognipilot/cranium/build/synapse_msgs/rosidl_adapter/synapse_msgs/msg/ServerCommunication.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

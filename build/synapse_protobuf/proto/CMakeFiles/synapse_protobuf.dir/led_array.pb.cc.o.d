@@ -1,7 +1,7 @@
 proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o: \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.cc \
  /usr/include/stdc-predef.h \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.h \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.h \
  /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -284,8 +284,8 @@ proto/CMakeFiles/synapse_protobuf.dir/led_array.pb.cc.o: \
  /usr/include/google/protobuf/stubs/stl_util.h \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.h \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.h \
- /home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.h \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.h \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.h \
+ /home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.h \
  /usr/include/google/protobuf/reflection_ops.h \
  /usr/include/google/protobuf/wire_format.h

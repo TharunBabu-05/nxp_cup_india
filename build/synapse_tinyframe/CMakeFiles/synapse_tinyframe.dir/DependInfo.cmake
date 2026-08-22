@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c" "CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o" "gcc" "CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o.d"
-  "/home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c" "CMakeFiles/synapse_tinyframe.dir/src/utils.c.o" "gcc" "CMakeFiles/synapse_tinyframe.dir/src/utils.c.o.d"
+  "/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c" "CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o" "gcc" "CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o.d"
+  "/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c" "CMakeFiles/synapse_tinyframe.dir/src/utils.c.o" "gcc" "CMakeFiles/synapse_tinyframe.dir/src/utils.c.o.d"
   )
 
 # Targets to which this target links.

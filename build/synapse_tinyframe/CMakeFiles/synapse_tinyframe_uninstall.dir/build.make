@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/synapse_tinyframe
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/synapse_tinyframe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/synapse_tinyframe
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/synapse_tinyframe
 
 # Utility rule file for synapse_tinyframe_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/synapse_tinyframe_uninstall.dir/compiler_depend.make
 include CMakeFiles/synapse_tinyframe_uninstall.dir/progress.make
 
 CMakeFiles/synapse_tinyframe_uninstall:
-	/usr/bin/cmake -P /home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 synapse_tinyframe_uninstall: CMakeFiles/synapse_tinyframe_uninstall
 synapse_tinyframe_uninstall: CMakeFiles/synapse_tinyframe_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/synapse_tinyframe_uninstall.dir/clean:
 .PHONY : CMakeFiles/synapse_tinyframe_uninstall.dir/clean
 
 CMakeFiles/synapse_tinyframe_uninstall.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/synapse_tinyframe && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/synapse_tinyframe /home/tharun/cognipilot/cranium/src/synapse_tinyframe /home/tharun/cognipilot/cranium/build/synapse_tinyframe /home/tharun/cognipilot/cranium/build/synapse_tinyframe /home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/synapse_tinyframe_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/synapse_tinyframe && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/synapse_tinyframe /home/sanjay/cognipilot/cranium/src/synapse_tinyframe /home/sanjay/cognipilot/cranium/build/synapse_tinyframe /home/sanjay/cognipilot/cranium/build/synapse_tinyframe /home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/synapse_tinyframe_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/synapse_tinyframe_uninstall.dir/depend
 

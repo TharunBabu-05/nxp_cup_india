@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/corti
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/corti
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/corti
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/corti
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bezier6.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/bezier6.dir/progress.make
 include CMakeFiles/bezier6.dir/flags.make
 
 CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o: CMakeFiles/bezier6.dir/flags.make
-CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o: /home/tharun/cognipilot/cranium/src/corti/src/casadi/bezier6.c
+CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o: /home/sanjay/cognipilot/cranium/src/corti/src/casadi/bezier6.c
 CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o: CMakeFiles/bezier6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tharun/cognipilot/cranium/build/corti/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o -MF CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o.d -o CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o -c /home/tharun/cognipilot/cranium/src/corti/src/casadi/bezier6.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sanjay/cognipilot/cranium/build/corti/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o -MF CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o.d -o CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o -c /home/sanjay/cognipilot/cranium/src/corti/src/casadi/bezier6.c
 
 CMakeFiles/bezier6.dir/src/casadi/bezier6.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bezier6.dir/src/casadi/bezier6.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tharun/cognipilot/cranium/src/corti/src/casadi/bezier6.c > CMakeFiles/bezier6.dir/src/casadi/bezier6.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sanjay/cognipilot/cranium/src/corti/src/casadi/bezier6.c > CMakeFiles/bezier6.dir/src/casadi/bezier6.c.i
 
 CMakeFiles/bezier6.dir/src/casadi/bezier6.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bezier6.dir/src/casadi/bezier6.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tharun/cognipilot/cranium/src/corti/src/casadi/bezier6.c -o CMakeFiles/bezier6.dir/src/casadi/bezier6.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sanjay/cognipilot/cranium/src/corti/src/casadi/bezier6.c -o CMakeFiles/bezier6.dir/src/casadi/bezier6.c.s
 
 # Object files for target bezier6
 bezier6_OBJECTS = \
@@ -93,7 +93,7 @@ bezier6_EXTERNAL_OBJECTS =
 libbezier6.a: CMakeFiles/bezier6.dir/src/casadi/bezier6.c.o
 libbezier6.a: CMakeFiles/bezier6.dir/build.make
 libbezier6.a: CMakeFiles/bezier6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tharun/cognipilot/cranium/build/corti/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libbezier6.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sanjay/cognipilot/cranium/build/corti/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libbezier6.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bezier6.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bezier6.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/bezier6.dir/clean:
 .PHONY : CMakeFiles/bezier6.dir/clean
 
 CMakeFiles/bezier6.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/corti && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/corti /home/tharun/cognipilot/cranium/src/corti /home/tharun/cognipilot/cranium/build/corti /home/tharun/cognipilot/cranium/build/corti /home/tharun/cognipilot/cranium/build/corti/CMakeFiles/bezier6.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/corti && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/corti /home/sanjay/cognipilot/cranium/src/corti /home/sanjay/cognipilot/cranium/build/corti /home/sanjay/cognipilot/cranium/build/corti /home/sanjay/cognipilot/cranium/build/corti/CMakeFiles/bezier6.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bezier6.dir/depend
 

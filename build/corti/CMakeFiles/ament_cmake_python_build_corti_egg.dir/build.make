@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tharun/cognipilot/cranium/src/corti
+CMAKE_SOURCE_DIR = /home/sanjay/cognipilot/cranium/src/corti
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tharun/cognipilot/cranium/build/corti
+CMAKE_BINARY_DIR = /home/sanjay/cognipilot/cranium/build/corti
 
 # Utility rule file for ament_cmake_python_build_corti_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_corti_egg.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_build_corti_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_corti_egg:
-	cd /home/tharun/cognipilot/cranium/build/corti/ament_cmake_python/corti && /usr/bin/python3 setup.py egg_info
+	cd /home/sanjay/cognipilot/cranium/build/corti/ament_cmake_python/corti && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_corti_egg: CMakeFiles/ament_cmake_python_build_corti_egg
 ament_cmake_python_build_corti_egg: CMakeFiles/ament_cmake_python_build_corti_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_corti_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_corti_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_corti_egg.dir/depend:
-	cd /home/tharun/cognipilot/cranium/build/corti && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tharun/cognipilot/cranium/src/corti /home/tharun/cognipilot/cranium/src/corti /home/tharun/cognipilot/cranium/build/corti /home/tharun/cognipilot/cranium/build/corti /home/tharun/cognipilot/cranium/build/corti/CMakeFiles/ament_cmake_python_build_corti_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sanjay/cognipilot/cranium/build/corti && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sanjay/cognipilot/cranium/src/corti /home/sanjay/cognipilot/cranium/src/corti /home/sanjay/cognipilot/cranium/build/corti /home/sanjay/cognipilot/cranium/build/corti /home/sanjay/cognipilot/cranium/build/corti/CMakeFiles/ament_cmake_python_build_corti_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_corti_egg.dir/depend
 

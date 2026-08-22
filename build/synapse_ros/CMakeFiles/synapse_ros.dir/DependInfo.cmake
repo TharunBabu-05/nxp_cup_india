@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tharun/cognipilot/cranium/src/synapse_ros/src/proto/udp_link.cpp" "CMakeFiles/synapse_ros.dir/src/proto/udp_link.cpp.o" "gcc" "CMakeFiles/synapse_ros.dir/src/proto/udp_link.cpp.o.d"
-  "/home/tharun/cognipilot/cranium/src/synapse_ros/src/synapse_ros.cpp" "CMakeFiles/synapse_ros.dir/src/synapse_ros.cpp.o" "gcc" "CMakeFiles/synapse_ros.dir/src/synapse_ros.cpp.o.d"
+  "/home/sanjay/cognipilot/cranium/src/synapse_ros/src/proto/udp_link.cpp" "CMakeFiles/synapse_ros.dir/src/proto/udp_link.cpp.o" "gcc" "CMakeFiles/synapse_ros.dir/src/proto/udp_link.cpp.o.d"
+  "/home/sanjay/cognipilot/cranium/src/synapse_ros/src/synapse_ros.cpp" "CMakeFiles/synapse_ros.dir/src/synapse_ros.cpp.o" "gcc" "CMakeFiles/synapse_ros.dir/src/synapse_ros.cpp.o.d"
   )
 
 # Targets to which this target links.

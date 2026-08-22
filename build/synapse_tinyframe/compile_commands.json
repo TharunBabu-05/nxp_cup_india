@@ -1,12 +1,12 @@
 [
 {
-  "directory": "/home/tharun/cognipilot/cranium/build/synapse_tinyframe",
-  "command": "/usr/bin/cc  -I/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include -I/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe -Wall -Wextra -Wpedantic -o CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o -c /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c",
-  "file": "/home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c"
+  "directory": "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe",
+  "command": "/usr/bin/cc  -I/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include -I/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe -Wall -Wextra -Wpedantic -o CMakeFiles/synapse_tinyframe.dir/src/TinyFrame.c.o -c /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c",
+  "file": "/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/TinyFrame.c"
 },
 {
-  "directory": "/home/tharun/cognipilot/cranium/build/synapse_tinyframe",
-  "command": "/usr/bin/cc  -I/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include -I/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe -Wall -Wextra -Wpedantic -o CMakeFiles/synapse_tinyframe.dir/src/utils.c.o -c /home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c",
-  "file": "/home/tharun/cognipilot/cranium/src/synapse_tinyframe/src/utils.c"
+  "directory": "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe",
+  "command": "/usr/bin/cc  -I/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include -I/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include/synapse_tinyframe -Wall -Wextra -Wpedantic -o CMakeFiles/synapse_tinyframe.dir/src/utils.c.o -c /home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c",
+  "file": "/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/src/utils.c"
 }
 ]

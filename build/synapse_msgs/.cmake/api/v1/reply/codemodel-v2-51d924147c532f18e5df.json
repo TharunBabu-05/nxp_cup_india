@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ede5f6065da45364db96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "synapse_msgs__py",
+					"jsonFile" : "directory-synapse_msgs__py-da724a7e8e2b129718b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sanjay/cognipilot/cranium/build/synapse_msgs/synapse_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "synapse_msgs__rs",
+					"jsonFile" : "directory-synapse_msgs__rs-1f32140f165b12d083c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sanjay/cognipilot/cranium/build/synapse_msgs/synapse_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "synapse_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_synapse_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_synapse_msgs_egg-4fe4698594adf7f00f25.json",
+					"name" : "ament_cmake_python_build_synapse_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_synapse_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_synapse_msgs-d9cb10306385b45b9e0e.json",
+					"name" : "ament_cmake_python_copy_synapse_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs-dece623d5c770d3071f1.json",
+					"name" : "synapse_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__cpp-4f664fe9014b1d3eaafe.json",
+					"name" : "synapse_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "synapse_msgs__py::@05d9fcaf4dff202d17bd",
+					"jsonFile" : "target-synapse_msgs__py-06b5aea142f590992c98.json",
+					"name" : "synapse_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_generator_c-0360700c6e0d95259425.json",
+					"name" : "synapse_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_generator_py-6415c6c0abf041264a95.json",
+					"name" : "synapse_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_c-705e914af192bc87b91d.json",
+					"name" : "synapse_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_c__pyext-d8144dd1aaef5f73e927.json",
+					"name" : "synapse_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_cpp-701529144f9f88e2dbe2.json",
+					"name" : "synapse_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_fastrtps_c-8c8d980c50b83f463873.json",
+					"name" : "synapse_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_fastrtps_c__pyext-4b9472b2ee2fcc3ce96e.json",
+					"name" : "synapse_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_fastrtps_cpp-321146e001032fbc7bc5.json",
+					"name" : "synapse_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_introspection_c-374b4f1901c5039865c1.json",
+					"name" : "synapse_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_introspection_c__pyext-e038fefe3fc0766b76e1.json",
+					"name" : "synapse_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs__rosidl_typesupport_introspection_cpp-218a24e3e41a26fb5b96.json",
+					"name" : "synapse_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "synapse_msgs__rs::@384c6aa764a0f910a058",
+					"jsonFile" : "target-synapse_msgs__rs-eb31c396ed8c6808df94.json",
+					"name" : "synapse_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "synapse_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-synapse_msgs_uninstall-75de2b64dbd9d4d6faf9.json",
+					"name" : "synapse_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6a1359ac7c10378855c4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sanjay/cognipilot/cranium/build/synapse_msgs",
+		"source" : "/home/sanjay/cognipilot/cranium/src/synapse_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

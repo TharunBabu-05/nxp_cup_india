@@ -1,8 +1,8 @@
-# Install script for directory: /home/tharun/cognipilot/cranium/src/synapse_tinyframe
+# Install script for directory: /home/sanjay/cognipilot/cranium/src/synapse_tinyframe
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tharun/cognipilot/cranium/install/synapse_tinyframe")
+  set(CMAKE_INSTALL_PREFIX "/home/sanjay/cognipilot/cranium/install/synapse_tinyframe")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -47,23 +47,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/library_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/library_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tharun/cognipilot/cranium/src/synapse_tinyframe/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/libsynapse_tinyframe.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/libsynapse_tinyframe.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/synapse_tinyframe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/synapse_tinyframe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/synapse_tinyframe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/synapse_tinyframe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -71,7 +71,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,38 +79,38 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/environment" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/environment" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_index/share/ament_index/resource_index/packages/synapse_tinyframe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_index/share/ament_index/resource_index/packages/synapse_tinyframe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake"
-         "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/Export/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake")
+         "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/Export/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake/synapse_tinyframeExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -119,25 +119,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/Export/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/Export/share/synapse_tinyframe/cmake/synapse_tinyframeExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/Export/share/synapse_tinyframe/cmake/synapse_tinyframeExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/CMakeFiles/Export/share/synapse_tinyframe/cmake/synapse_tinyframeExport-noconfig.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe/cmake" TYPE FILE FILES
-    "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_core/synapse_tinyframeConfig.cmake"
-    "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_core/synapse_tinyframeConfig-version.cmake"
+    "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_core/synapse_tinyframeConfig.cmake"
+    "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/ament_cmake_core/synapse_tinyframeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/tharun/cognipilot/cranium/src/synapse_tinyframe/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/synapse_tinyframe" TYPE FILE FILES "/home/sanjay/cognipilot/cranium/src/synapse_tinyframe/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -148,5 +148,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tharun/cognipilot/cranium/build/synapse_tinyframe/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sanjay/cognipilot/cranium/build/synapse_tinyframe/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

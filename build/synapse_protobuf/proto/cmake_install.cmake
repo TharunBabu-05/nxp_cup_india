@@ -1,8 +1,8 @@
-# Install script for directory: /home/tharun/cognipilot/cranium/src/synapse_protobuf/proto
+# Install script for directory: /home/sanjay/cognipilot/cranium/src/synapse_protobuf/proto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tharun/cognipilot/cranium/install/synapse_protobuf")
+  set(CMAKE_INSTALL_PREFIX "/home/sanjay/cognipilot/cranium/install/synapse_protobuf")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,39 +43,39 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/libsynapse_protobuf.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/libsynapse_protobuf.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/synapse_protobuf" TYPE FILE FILES
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.h"
-    "/home/tharun/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/actuators.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/altimeter.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/battery_state.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_curve.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/bezier_trajectory.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/can.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/header.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/imu.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/joy.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/led_array.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/magnetic_field.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_fix.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/nav_sat_status.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/odometry.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pixy_vector.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/point.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/pose_with_covariance.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/quaternion.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/safety.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/sim_clock.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/status.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/time.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/twist_with_covariance.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/vector3.pb.h"
+    "/home/sanjay/cognipilot/cranium/build/synapse_protobuf/proto/wheel_odometry.pb.h"
     )
 endif()
 
